@@ -1,0 +1,1 @@
+global.insanity = clamp(global.insanity,0,100);

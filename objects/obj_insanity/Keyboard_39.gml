@@ -1,0 +1,1 @@
+// for testing global.insanity += 1;
