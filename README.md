@@ -1,4 +1,4 @@
 # Shadow-Rework
 GUI for Ellipsis' Shadow Priest concept
 
-Download the .zip file for the latest version.
+Download "ShadowReworkGUI-Domzae.zip" for the latest version.
