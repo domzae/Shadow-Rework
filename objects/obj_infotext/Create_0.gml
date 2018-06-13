@@ -6,6 +6,6 @@ text2 = "\n\nExpected WoW mechanics exist, such as haste reducing cast/channel t
 
 text3 = "Not yet implemented:\n    -Stacking insanity gain on Shadow Word: Death\n    -Call to the Void passive (tentacle procs)\n    -Talent options";
 
-text4 = "\n\nProbably never implemented:\n    -Pandemic on DoTs\n    -Pandemic when clipping MF/MS with itself\n    -Key bindings on abilities\n    -Lag tolerance"
+text4 = "\n\nProbably never implemented:\n    -Pandemic on DoTs\n    -Pandemic when clipping MF/MS with itself\n    -Lag tolerance"
 
 text5 = "\nLastly if you have any feedback or find bugs with the GUI you can find me via Discord: Domzae#8909"

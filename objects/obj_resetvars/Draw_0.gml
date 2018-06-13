@@ -1,7 +1,5 @@
-var text = "Reset to default values";
-
 draw_self();
-if image_index == 1
+if mouseover == true
 {
 	draw_tooltip(text);
 }

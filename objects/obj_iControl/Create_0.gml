@@ -1,8 +1,20 @@
 //set global variables initially, which can be altered in settings room
-//if you change the starting values for globals, copy them to obj_restart
+
 if !variable_global_exists("drain")
 {
-	scr_setglobvars();
+	//insanity state
+	global.sanity = true;
+	global.madness = false;
+	global.surrender = false;
+	
+	if file_exists(working_directory + "settings.ini")
+	{
+		scr_loadsettings();
+	}
+	else
+	{
+		scr_setglobvars();
+	}
 }
 
 

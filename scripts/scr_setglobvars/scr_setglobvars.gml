@@ -1,7 +1,4 @@
-//insanity state
-global.sanity = true;
-global.madness = false;
-global.surrender = false;
+
 
 //general
 global.basedrain = room_speed/5;
