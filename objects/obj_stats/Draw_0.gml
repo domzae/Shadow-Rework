@@ -35,7 +35,11 @@ else
 }
 
 //draw drain
-if obj_iControl.alarm[2] >= 0
+if global.madness == true
+{
+	draw_outline_text(x,y+100,c_black,c_white,string_format("-",4,1))
+}
+else if obj_iControl.alarm[2] >= 0
 {
 	//red
 	draw_outline_text(x,y+100,c_black,c_red,string_format(room_speed/global.drain,4,1) + "/s")
