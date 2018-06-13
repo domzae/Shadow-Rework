@@ -1,11 +1,11 @@
-/// @description Insert description here
+/// @description
 // You can write your code in this editor
 
 // Inherit the parent event
 event_inherited();
 
 //unuseable ovelay
-if global.madness == true && cdLeft == 0
+if global.madness == true
 {
 	draw_set_alpha(0.5);
 	draw_set_color(c_red);

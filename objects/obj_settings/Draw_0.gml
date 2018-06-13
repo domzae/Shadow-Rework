@@ -34,7 +34,7 @@ else
 //right text mouseover
 if mouseover == true
 {
-	draw_tooltip_settings();
+	draw_tooltip_settings(rightText);
 }
 
 	draw_set_halign(fa_right);

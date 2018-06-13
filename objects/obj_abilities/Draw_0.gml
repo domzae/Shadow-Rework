@@ -7,7 +7,6 @@ draw_set_halign(fa_middle);
 draw_set_colour(c_yellow);
 draw_set_alpha(($FF000000 >> 24) / $ff);
 
-//draw_text(x, y - 32, string(abilityName));
 
 if cdLeft == 0 or cdLeft == global.gcdLeft
 {
@@ -25,41 +24,12 @@ else
 	draw_outline_text(x, y-25,c_black,c_yellow, string_format(cdLeft,2,0));
 }	
 
-
 //mouseover 
 if focus == true
 {
 	draw_sprite(spr_abilityover,0,x,y);
 	draw_tooltip_ability();
 }
-
-/*
-if alarm[3] > 0
-{
-	//draw +insanity from cast next to insanity bar
-	draw_set_halign(fa_left);
-	draw_set_font(fnt_insanity);
-	draw_outline_text(obj_insanity.x + 545 , obj_insanity.y - 22, c_black, c_green, "+ " + string(insanityGain));
-
-	//draw cast name on cast bar
-	draw_set_font(fnt_basic);
-	draw_set_halign(fa_left);
-	draw_outline_text(obj_castBar.x - 348,obj_castBar.y - 16,c_black,c_white, string(abilityName));
-}
-
-if alarm[1] > 0 and global.channeling == true
-{
-	//draw +insanity from channel next to insanity bar
-	draw_set_halign(fa_left);
-	draw_set_font(fnt_insanity);
-	draw_outline_text(obj_insanity.x + 545 , obj_insanity.y - 22, c_black, c_green, "+" + string_format(insanityGain/4,3,1));
-
-	//draw channel name on cast bar
-	draw_set_font(fnt_basic);
-	draw_set_halign(fa_left);
-	draw_outline_text(obj_castBar.x - 348,obj_castBar.y - 16,c_black,c_white, string(abilityName));
-}
-*/
 
 //gcd overlay
 if cdLeft == global.gcdLeft and cdLeft > 0
@@ -87,3 +57,18 @@ if isVoid == true and global.sanity == true
 	draw_set_alpha(1);
 }
 
+//draw keybind
+draw_set_halign(fa_middle);
+draw_set_font(fnt_basic);
+draw_outline_text(x+30,y-50,c_black,c_white, string(keybind));
+
+//draw newbinding
+if setbinding == true
+{
+	draw_set_color(c_black)
+	draw_rectangle(x+15,y-48,x+48,y-20,0);
+	draw_set_color(c_lime)
+	draw_rectangle(x+15,y-48,x+48,y-20,1);
+	
+	draw_tooltip_settings("Press a button to set a keybind for " + abilityName)
+}

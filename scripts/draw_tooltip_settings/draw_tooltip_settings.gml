@@ -1,4 +1,4 @@
-//draw_tooltip_ability()  
+//draw_tooltip_settings(text)  
 
 
 draw_set_font(fnt_tooltip);
@@ -6,7 +6,7 @@ draw_set_font(fnt_tooltip);
 var xx = mouse_x + 10;
 var yy = mouse_y + 20;
 
-var text = rightText;
+var text = argument[0];
 var textwidth = 400;
 
 var boxheight = string_height_ext(text,-1,textwidth)+10;
