@@ -8,3 +8,5 @@ Ellipsis' google sheet: https://docs.google.com/spreadsheets/d/1TqUAxGz4gVQuge7e
 Reddit post: https://www.reddit.com/r/wow/comments/8ql43e/playable_shadow_priest_rework_concept/
 
 Dropbox for zip: https://www.dropbox.com/home?preview=ShadowReworkGUI-Domzae.zip
+
+Some parts are quite a mess - as I'm learning as I go!
