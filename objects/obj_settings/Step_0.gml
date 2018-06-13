@@ -30,7 +30,9 @@ if (focus = true)
 		    // 96-105 : numpad numbers
 			// 109	  : numpad dash
 		    // 110    : numpad decimal
-	    else if ((k>=48 and k<=57) || (k>=96 and k<=105) || k=vk_decimal || k=110 || k=109 || k=60) and string_length(userinput) < maxCharacters
+			// 189	  : dash
+			// 190    : decimal
+	    else if ((k>=48 and k<=57) || (k>=96 and k<=105) || k=vk_decimal || k=110 || k=109 || k=60 || k=189 || k=190) and string_length(userinput) < maxCharacters
 	    {
 	        
 			if userinput = 0

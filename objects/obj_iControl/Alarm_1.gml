@@ -4,7 +4,7 @@ if global.surrender == true
 {
 	//global.haste = global.basehaste + 15;
 
-	//global.drain = global.basedrain;
+	global.drain = global.basedrain;
 
 	global.surrender = false;
 	global.madness = false;

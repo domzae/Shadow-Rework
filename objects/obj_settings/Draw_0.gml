@@ -40,3 +40,4 @@ if mouseover == true
 	draw_set_halign(fa_right);
 	draw_set_font(fnt_settings);;	
 	
+	

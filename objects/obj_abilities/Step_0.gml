@@ -12,14 +12,18 @@ else
 //set cd to shared cd for eruption and bolt
 if (global.madness == true and (abilityName == "Void Eruption" or abilityName == "Void Bolt"))
 {
-	if madnessStart == true
+	if madnessStart == true 
 	{
 		cdHold = cdhasted;
 		cdhasted = global.cdSharedVoid;
 		madnessStart = false;
 		if alarm[0] > 1
 		{
-			alarm[0] = 1;
+			alarm[0] = -1
+			if abilityName == "Void Eruption"
+			{
+				image_index --;
+			}
 		}
 	}
 }
