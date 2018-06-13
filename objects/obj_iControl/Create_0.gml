@@ -1,5 +1,6 @@
-//set global variables initially, which can be altered in settings room
 
+
+//set global variables initially, which can be altered in settings room
 if !variable_global_exists("drain")
 {
 	//insanity state
