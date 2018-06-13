@@ -3,7 +3,7 @@ instance_destroy(obj_settings); //destroy to reload
 	
 if file_exists(working_directory + "settings.ini")
 {
-	scr_loadsettings();
+	scr_loadsettings("settings.ini");
 	recent = true;
 	alarm[0] = 1;
 	text = "Loaded!"

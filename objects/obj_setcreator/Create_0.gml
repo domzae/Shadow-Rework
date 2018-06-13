@@ -34,17 +34,6 @@ with (setinsgainSWDeath)
 yy += verticalspacing;
 yy += verticalspacing;
 
-//Mind Flay
-setinsgainMindFlay = instance_create_depth(x, y + yy, 0, obj_settings);
-with (setinsgainMindFlay)
-{
-	userinput = global.insgainMindFlay;
-	maxCharacters = 5;
-	leftText = "Mind Flay insanity";
-	rightText = "generated over a full channel";
-}
-yy += verticalspacing;
-
 //Mind Sear
 setinsgainMindSear = instance_create_depth(x, y + yy, 0, obj_settings);
 with (setinsgainMindSear)
@@ -53,6 +42,17 @@ with (setinsgainMindSear)
 	maxCharacters = 5;
 	leftText = "Mind Sear insanity";
 	rightText = "generated over a full channel per target";
+}
+yy += verticalspacing;
+
+//Mind Flay
+setinsgainMindFlay = instance_create_depth(x, y + yy, 0, obj_settings);
+with (setinsgainMindFlay)
+{
+	userinput = global.insgainMindFlay;
+	maxCharacters = 5;
+	leftText = "Mind Flay insanity";
+	rightText = "generated over a full channel";
 }
 yy += verticalspacing;
 yy += verticalspacing;
@@ -125,7 +125,6 @@ with (setcdSWDeath)
 }
 yy2 += verticalspacing;
 yy2 += verticalspacing;
-yy2 += verticalspacing;
 
 //sear targets
 setsearTargets = instance_create_depth(xx, y + yy2, 0, obj_settings);
@@ -137,6 +136,17 @@ with (setsearTargets)
 	rightText = "number of targets hit by a single tick of mind sear";
 }
 yy2 += verticalspacing;
+yy2 += verticalspacing;
+
+//shared void cooldown during madness
+setcdSharedVoid = instance_create_depth(xx, y + yy2, 0, obj_settings);
+with (setcdSharedVoid)
+{
+	userinput = global.cdSharedVoid;
+	maxCharacters = 5;
+	leftText = "Shared Void CD";
+	rightText = "GCDs - shared cooldown for Void Bolt and Void Eruption (during Madness)";
+}
 yy2 += verticalspacing;
 
 //void bolt cooldown
@@ -160,17 +170,6 @@ with (setcdVEruption)
 	rightText = "GCDs - while in Voidform";
 }
 yy2 += verticalspacing;
-
-//shared void cooldown during madness
-setcdSharedVoid = instance_create_depth(xx, y + yy2, 0, obj_settings);
-with (setcdSharedVoid)
-{
-	userinput = global.cdSharedVoid;
-	maxCharacters = 5;
-	leftText = "Shared Void CD";
-	rightText = "GCDs - shared cooldown for Void Bolt and Void Eruption (during Madness)";
-}
-yy2 += verticalspacing;
 yy2 += verticalspacing;
 
 setcdS2M = instance_create_depth(xx, y + yy2, 0, obj_settings);
@@ -191,6 +190,17 @@ with (setsurrenderTime)
 	maxCharacters = 5;
 	leftText = "Surrender duration";
 	rightText = "seconds - duration of Madness when activated by Surrender to Madness";
+}
+yy2 += verticalspacing;
+
+//surrender exi
+setsurrenderExitIns = instance_create_depth(xx, y + yy2, 0, obj_settings);
+with (setsurrenderExitIns)
+{
+	userinput = global.surrenderExitIns;
+	maxCharacters = 5;
+	leftText = "Surrender exit insanity";
+	rightText = "starting insanity when Surrender to Madness expires";
 }
 
 //RIGHT COLUMN

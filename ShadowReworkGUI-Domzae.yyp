@@ -279,14 +279,6 @@
             }
         },
         {
-            "Key": "74ea974e-15a8-46c9-99e7-9ffca646cb09",
-            "Value": {
-                "id": "dcd6b0c1-1df3-4424-bd45-6a0830f47667",
-                "resourcePath": "scripts\\scr_setglobvars\\scr_setglobvars.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "75905dad-c658-4e72-90d7-118d4d8ceda7",
             "Value": {
                 "id": "8613aa65-d655-443f-8116-78d9308ee65d",
@@ -656,7 +648,6 @@
         }
     ],
     "script_order": [
-        "74ea974e-15a8-46c9-99e7-9ffca646cb09",
         "3a7b4d61-54b2-448a-b577-93f2e9345655",
         "b8187701-7014-473b-91a8-e2e38a1c29fc",
         "00d808d7-8f24-4b14-a7bf-876761d69af4",

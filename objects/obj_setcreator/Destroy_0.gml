@@ -27,6 +27,10 @@ with (setsurrenderTime)
 {
 	global.surrenderTime = real(userinput);
 }
+with (setsurrenderExitIns)
+{
+	global.surrenderExitIns = real(userinput);
+}
 with (setsearTargets)
 {
 	global.searTargets = real(userinput);

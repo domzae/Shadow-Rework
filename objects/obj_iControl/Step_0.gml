@@ -3,7 +3,7 @@ if global.surrender == true
 	if global.surrenderStart = true		//set things for surrender
 	{
 		
-		global.drain = room_speed/(10/global.surrenderTime);
+		global.drain = room_speed/((100-global.surrenderExitIns)/global.surrenderTime);
 		alarm[2] = -1;
 		alarm[1] = -1;
 	

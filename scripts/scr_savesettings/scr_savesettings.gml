@@ -17,6 +17,7 @@ ini_write_real("Madness","Madness Duration",global.madnessTime);
 ini_write_real("Madness","Surrender Duration",global.surrenderTime);
 ini_write_real("Madness","Satiated %",global.satiatedModifier);
 ini_write_real("Madness","Satiated Duration",global.satiatedTime);
+ini_write_real("Madness","Surrender Exit Insanity",global.surrenderExitIns);
 
 //ability cds
 ini_write_real("Cooldowns","Mind Blast CD",global.cdMindBlast);

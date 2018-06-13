@@ -8,14 +8,15 @@ if !variable_global_exists("drain")
 	global.madness = false;
 	global.surrender = false;
 	
-	if file_exists(working_directory + "settings.ini")
-	{
-		scr_loadsettings();
-	}
-	else
-	{
-		scr_setglobvars();
-	}
+	//if !file_exists(working_directory + "settings.ini")
+	//{
+		ini_open(working_directory + "settings.ini")
+		scr_loadsettings("settings.ini");
+	//}
+	//else
+	//{
+	//	scr_setglobvars();
+	//}
 }
 
 
