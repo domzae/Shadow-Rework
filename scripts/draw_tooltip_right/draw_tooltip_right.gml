@@ -1,4 +1,4 @@
-//draw_tooltip(text)  
+//draw_tooltip_right(text)  
 
 var xx = x;
 var yy = y;

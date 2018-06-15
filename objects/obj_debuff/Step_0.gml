@@ -1,1 +1,1 @@
-drainDebuffLeft = obj_iControl.alarm[2]/room_speed;
+debuffLeft = obj_iControl.alarm[2]/room_speed;

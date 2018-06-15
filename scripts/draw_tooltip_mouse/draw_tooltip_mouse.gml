@@ -1,4 +1,4 @@
-//draw_tooltip_settings(text)  
+//draw_tooltip_mouse(text,maxWidth)  
 
 
 draw_set_font(fnt_tooltip);
@@ -7,10 +7,15 @@ var xx = mouse_x + 10;
 var yy = mouse_y + 20;
 
 var text = argument[0];
-var textwidth = 400;
+var maxWidth = argument[1];
 
-var boxheight = string_height_ext(text,-1,textwidth)+10;
-var boxwidth = string_width_ext(text,-1,400)+10;
+if maxWidth == 0  //default to string width
+{
+	maxWidth = string_width(text)
+}
+
+var boxheight = string_height_ext(text,-1,maxWidth)+10;
+var boxwidth = string_width_ext(text,-1,maxWidth)+10;
 
 var alpha = 0.8;
 
@@ -42,5 +47,5 @@ draw_set_halign(fa_left);
 draw_set_color(c_white);
 
 //draw_outline_text(xx, yy,c_black,c_white, string(text));
-draw_text_ext(xx, yy, text, -1, textwidth);
+draw_text_ext(xx, yy, text, -1, maxWidth);
 

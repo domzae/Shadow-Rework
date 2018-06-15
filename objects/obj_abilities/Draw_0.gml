@@ -24,11 +24,13 @@ else
 	draw_outline_text(x, y-25,c_black,c_yellow, string_format(cdLeft,2,0));
 }	
 
+var tooltipText = string(string(abilityName) + "\nCD: " + string(cd/room_speed) + "s" + "\nInsanity gained: " + string(insanityGain) + "\n" + string(mouseoverText));
+
 //mouseover 
 if focus == true && setbinding == false
 {
 	draw_sprite(spr_abilityover,0,x,y);
-	draw_tooltip_ability();
+	draw_tooltip_mouse(tooltipText,0);
 	draw_outline_text(20, 1000,c_black,c_white,"Right/Middle-Click to change key binding (numbers/letters only)");
 }
 
@@ -71,5 +73,5 @@ if setbinding == true
 	draw_set_color(c_lime)
 	draw_rectangle(x+15,y-48,x+48,y-20,1);
 	
-	draw_tooltip_settings("Press a button to set a keybind for " + abilityName)
+	draw_tooltip_mouse("Press a button to set a keybind for " + abilityName,400)
 }

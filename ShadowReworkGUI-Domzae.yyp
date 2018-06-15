@@ -34,7 +34,7 @@
             "Key": "00d808d7-8f24-4b14-a7bf-876761d69af4",
             "Value": {
                 "id": "100110e1-b918-4894-bb63-85a878e3389e",
-                "resourcePath": "scripts\\draw_tooltip\\draw_tooltip.yy",
+                "resourcePath": "scripts\\draw_tooltip_right\\draw_tooltip_right.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -495,18 +495,10 @@
             }
         },
         {
-            "Key": "cce525af-0a0e-4576-ab16-2ced71a86922",
-            "Value": {
-                "id": "228ac516-b859-4ccc-ad4c-29a62ea61f69",
-                "resourcePath": "scripts\\draw_tooltip_debuff\\draw_tooltip_debuff.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "d34f7513-d415-4667-b725-2a6958edfc0c",
             "Value": {
                 "id": "948d20e7-b4e5-4899-a02e-157e2a697080",
-                "resourcePath": "scripts\\draw_tooltip_settings\\draw_tooltip_settings.yy",
+                "resourcePath": "scripts\\draw_tooltip_mouse\\draw_tooltip_mouse.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -572,14 +564,6 @@
                 "id": "47997e34-07b9-46e1-b2f7-100eb78b33e4",
                 "resourcePath": "sprites\\spr_reset\\spr_reset.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "ea9fca1c-eeb2-422e-8bd1-058904ce0460",
-            "Value": {
-                "id": "9a8046c3-fa72-4a82-a47e-b83a1fddeab5",
-                "resourcePath": "scripts\\draw_tooltip_ability\\draw_tooltip_ability.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -651,8 +635,6 @@
         "3a7b4d61-54b2-448a-b577-93f2e9345655",
         "b8187701-7014-473b-91a8-e2e38a1c29fc",
         "00d808d7-8f24-4b14-a7bf-876761d69af4",
-        "ea9fca1c-eeb2-422e-8bd1-058904ce0460",
-        "cce525af-0a0e-4576-ab16-2ced71a86922",
         "d34f7513-d415-4667-b725-2a6958edfc0c",
         "5d4f81d4-3499-45a1-8bc0-075117ff9c17",
         "df64173d-2996-4dea-8017-a6df5e75d6a8",
