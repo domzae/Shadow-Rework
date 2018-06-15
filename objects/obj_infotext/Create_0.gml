@@ -4,7 +4,7 @@ text1 = "\n\n\n\nThe general goals are:\n    -Maintain SW:P and VT\n    -Stay be
 
 text2 = "\n\nExpected WoW mechanics exist, such as haste reducing cast/channel times, as well as the global cooldown (up to a cap of 0.5s). Anything that is not related to insanity or cooldowns (such as damage numbers or critical strikes), is not included here,";
 
-text3 = "Not yet implemented:\n    -Stacking insanity gain on Shadow Word: Death\n    -Call to the Void passive (tentacle procs)\n    -Talent options";
+text3 = "Not yet implemented:\n    -Call to the Void passive (tentacle procs)\n    -Talent options";
 
 text4 = "\n\nProbably never implemented:\n    -Pandemic on DoTs\n    -Pandemic when clipping MF/MS with itself\n    -Lag tolerance"
 

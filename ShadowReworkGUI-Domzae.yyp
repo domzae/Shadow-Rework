@@ -322,7 +322,7 @@
             "Key": "92f6c5b8-c059-4311-9d1e-a08153dab6b8",
             "Value": {
                 "id": "17fadbf3-8523-4f01-b734-b4e9b2f911ee",
-                "resourcePath": "objects\\obj_debuff\\obj_debuff.yy",
+                "resourcePath": "objects\\obj_debuff_satiated\\obj_debuff_satiated.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -492,6 +492,14 @@
                 "id": "f7c225b0-1ead-4dc9-882d-1dd9b8759700",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cf488786-3319-406f-8fe3-46d84f022287",
+            "Value": {
+                "id": "4795b4ce-ba0b-4533-906d-2c14c7498c9b",
+                "resourcePath": "objects\\obj_debuff_SWD\\obj_debuff_SWD.yy",
+                "resourceType": "GMObject"
             }
         },
         {

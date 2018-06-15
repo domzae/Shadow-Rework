@@ -61,6 +61,17 @@ else if global.gcdLeft == 0 and cdLeft == 0
 		{
 			alarm[0] = global.gcd;
 		}
+		
+		if abilityName == "Shadow Word: Death"
+		{
+			//obj_debuff_SWD.alarm[0] = 20*room_speed
+			insanityGain = global.insgainSWDeath + global.insgainSWDeath*obj_debuff_SWD.debuffLeft;
+			if insanityGain < 100
+			{
+				obj_debuff_SWD.debuffLeft ++;
+			}
+		}
+		
 		if global.madness == false
 		{
 			global.insanity = global.insanity + insanityGain;

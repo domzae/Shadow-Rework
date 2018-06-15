@@ -2,7 +2,7 @@
     "id": "92f6c5b8-c059-4311-9d1e-a08153dab6b8",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_debuff",
+    "name": "obj_debuff_satiated",
     "eventList": [
         {
             "id": "6d3631aa-3c25-4329-a3f8-bf4125971a83",
@@ -92,20 +92,7 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
-        {
-            "id": "754f9057-6d72-492f-9db9-7ff6c8265997",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "trigger",
-            "varType": 0
-        }
+        
     ],
     "solid": false,
     "spriteId": "97075cd2-102f-4b67-ba78-39120d254a93",

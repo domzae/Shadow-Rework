@@ -50,6 +50,11 @@ if cdhasted > 0 //update cooldown for cooldowns that are defined by haste
 	cd = cdhasted*global.gcd;
 }
 
+if abilityName == "Shadow Word: Death" //update SWD insanity
+{
+	insanityGain = global.insgainSWDeath + global.insgainSWDeath*obj_debuff_SWD.debuffLeft;
+}
+
 //set binding
 var k=keyboard_lastkey;
 var c=keyboard_lastchar;
