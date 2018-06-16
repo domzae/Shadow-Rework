@@ -13,6 +13,7 @@ global.vfhaste = ini_read_real("General","Voidform Haste",15);
 global.madnesshaste = ini_read_real("General","Madness Haste",30);
 
 global.searTargets = ini_read_real("General","Mind Sear Targets",4);
+global.cttvProc = ini_read_real("General","Call to the Void RPPM",2);
 
 
 global.madnessTime = ini_read_real("Madness","Madness Duration",12);
@@ -31,13 +32,14 @@ global.cdS2M = ini_read_real("Cooldowns","Surrender to Madness CD",180);
 global.cdSharedVoid = ini_read_real("Cooldowns","Void Shared CD",3);
 
 //insanity gains
-global.insgainMindBlast = ini_read_real("Insanity","Mind Blast Insanity",17.5);
-global.insgainSWDeath = ini_read_real("Insanity","SW: Death Insanity",25);
+global.insgainMindBlast = ini_read_real("Insanity","Mind Blast Insanity",15);
+global.insgainSWDeath = ini_read_real("Insanity","SW: Death Insanity",20);
 global.insgainVBolt = ini_read_real("Insanity","Void Bolt Insanity",0);
-global.insgainVEruption = ini_read_real("Insanity","Void Eruption Insanity",-22.5);
-global.insgainMindFlay = ini_read_real("Insanity","Mind Flay Insanity",25);
-global.insgainMindSear = ini_read_real("Insanity","Mind Sear Insanity",9);
-global.insgainSWPain = ini_read_real("Insanity","SW: Pain Insanity",12);
-global.insgainVT = ini_read_real("Insanity","Vampiric Touch Insanity",12);
+global.insgainVEruption = ini_read_real("Insanity","Void Eruption Insanity",-20);
+global.insgainMindFlay = ini_read_real("Insanity","Mind Flay Insanity",22);
+global.insgainMindSear = ini_read_real("Insanity","Mind Sear Insanity",8);
+global.insgainSWPain = ini_read_real("Insanity","SW: Pain Insanity",11);
+global.insgainVT = ini_read_real("Insanity","Vampiric Touch Insanity",11);
+global.insgainCttV = ini_read_real("Insanity","Call to the Void Insanity", 20);
 
 ini_close();

@@ -1,0 +1,2 @@
+/// @description tentacle proc duration
+

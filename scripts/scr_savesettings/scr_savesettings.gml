@@ -12,6 +12,7 @@ ini_write_real("General","Madness Haste",global.madnesshaste);
 ini_write_real("General","Current Haste",global.haste);
 
 ini_write_real("General","Mind Sear Targets",global.searTargets);
+ini_write_real("General","Call to the Void RPPM",global.cttvProc);
 
 ini_write_real("Madness","Madness Duration",global.madnessTime);
 ini_write_real("Madness","Surrender Duration",global.surrenderTime);
@@ -36,5 +37,6 @@ ini_write_real("Insanity","Mind Flay Insanity",global.insgainMindFlay);
 ini_write_real("Insanity","Mind Sear Insanity",global.insgainMindSear);
 ini_write_real("Insanity","SW: Pain Insanity",global.insgainSWPain);
 ini_write_real("Insanity","Vampiric Touch Insanity",global.insgainVT);
+ini_write_real("Insanity","Call to the Void Insanity",global.insgainCttV);
 
 ini_close();

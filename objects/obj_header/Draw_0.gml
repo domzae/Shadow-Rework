@@ -9,4 +9,4 @@ draw_outline_text(x,y+100,c_purple,c_white,"Concept by Ellipsis\nGUI by Domzae")
 
 //version
 draw_set_font(fnt_basic)
-draw_text(0,0,"v1.02")
+draw_text(0,0,"v" + GM_version)

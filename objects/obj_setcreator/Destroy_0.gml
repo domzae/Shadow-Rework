@@ -47,6 +47,10 @@ with (setcdSharedVoid)
 {
 	global.cdSharedVoid = real(userinput);
 }
+with (setcttvProc)
+{
+	global.cttvProc = real(userinput);
+}
 
 //CDS
 
@@ -104,4 +108,8 @@ with (setinsgainSWPain)
 with (setinsgainVT)
 {
 	global.insgainVT = real(userinput);
+}
+with(setinsgainCttV)
+{
+	global.insgainCttV = real(userinput);
 }

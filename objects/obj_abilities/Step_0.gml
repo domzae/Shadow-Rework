@@ -55,6 +55,12 @@ if abilityName == "Shadow Word: Death" //update SWD insanity
 	insanityGain = global.insgainSWDeath + global.insgainSWDeath*obj_debuff_SWD.debuffLeft;
 }
 
+if abilityName == "Mind Flay" //tentacle proc
+{
+	timeLastProc ++;
+	clamp(timeLastProc,0,60*room_speed)
+}
+
 //set binding
 var k=keyboard_lastkey;
 var c=keyboard_lastchar;
