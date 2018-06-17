@@ -16,18 +16,20 @@ alarm[1] = channelTime*global.hastemultiplier;
 alarm[2] = channelTime*global.hastemultiplier/4;
 
 // Call to the Void proc
-var procchance = 60/global.cttvProc * ( 1 - (global.haste/100)); // average seconds per proc
 var proc;
+
+
 if abilityName == "Mind Flay"
 {
-	proc = irandom(procchance)
-	if timeLastProc > room_speed*procchance // if no tentacle proc in last max proc window, give proc
-	{
-		proc = 0;
-	}
-	if proc == 0 && !instance_exists(obj_proc)
+	proc = irandom(floor(100/procchance))
+	if proc < 1 && !instance_exists(obj_proc)
 	{
 		instance_create_depth(x+3,y-86,-200,obj_proc);
 		timeLastProc = 0;
+		timeLastAttempt = 0;
+	}
+	else if !instance_exists(obj_proc)
+	{
+		timeLastAttempt = 0;
 	}
 }

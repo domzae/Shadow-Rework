@@ -47,9 +47,9 @@ with (setcdSharedVoid)
 {
 	global.cdSharedVoid = real(userinput);
 }
-with (setcttvProc)
+with (setCttVrppm)
 {
-	global.cttvProc = real(userinput);
+	global.CttVrppm = real(userinput);
 }
 
 //CDS

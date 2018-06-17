@@ -12,7 +12,7 @@ ini_write_real("General","Madness Haste",global.madnesshaste);
 ini_write_real("General","Current Haste",global.haste);
 
 ini_write_real("General","Mind Sear Targets",global.searTargets);
-ini_write_real("General","Call to the Void RPPM",global.cttvProc);
+ini_write_real("General","Call to the Void RPPM",global.CttVrppm);
 
 ini_write_real("Madness","Madness Duration",global.madnessTime);
 ini_write_real("Madness","Surrender Duration",global.surrenderTime);

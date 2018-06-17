@@ -13,7 +13,7 @@ global.vfhaste = ini_read_real("General","Voidform Haste",15);
 global.madnesshaste = ini_read_real("General","Madness Haste",30);
 
 global.searTargets = ini_read_real("General","Mind Sear Targets",4);
-global.cttvProc = ini_read_real("General","Call to the Void RPPM",2);
+global.CttVrppm = ini_read_real("General","Call to the Void RPPM",2);
 
 
 global.madnessTime = ini_read_real("Madness","Madness Duration",12);

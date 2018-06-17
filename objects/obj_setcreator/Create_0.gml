@@ -150,10 +150,10 @@ yy2 += verticalspacing;
 yy2 += verticalspacing;
 
 //call to the void proc chance
-setcttvProc = instance_create_depth(xx, y + yy2, 0, obj_settings);
-with (setcttvProc)
+setCttVrppm = instance_create_depth(xx, y + yy2, 0, obj_settings);
+with (setCttVrppm)
 {
-	userinput = global.cttvProc;
+	userinput = global.CttVrppm;
 	maxCharacters = 5;
 	leftText = "Call to the Void RPPM";
 	rightText = "Real Procs Per Minute (affected by haste)";
