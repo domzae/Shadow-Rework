@@ -8,6 +8,19 @@ if global.surrender == true
 
 	global.surrender = false;
 	global.madness = false;
+	
+	if global.talFotM == true
+	{
+		if global.insanity > global.talFotMins && obj_talentControl.revdrain = false
+		{
+			global.drain = -1 * global.drain
+			obj_talentControl.revdrain = true;
+		}
+		else
+		{
+			obj_talentControl.revdrain = false;
+		}
+	}
 }
 else //exit normal madness
 {

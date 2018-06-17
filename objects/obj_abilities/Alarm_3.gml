@@ -42,4 +42,25 @@ if global.casting == true
 			}
 		}
 	}
+	
+	if abilityName == "Mind Blast"
+	{
+		if global.talBlackout == true
+		{
+			with inst_swpain
+			{
+				if dotApplied == true
+				{
+					alarm[4] = alarm[4] + global.talBlackoutDotInc*room_speed;
+				}
+			}
+			with inst_vampirictouch
+			{
+				if dotApplied == true
+				{
+					alarm[4] = alarm[4] + global.talBlackoutDotInc*room_speed;
+				}
+			}
+		}
+	}
 }
