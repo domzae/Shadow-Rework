@@ -19,3 +19,15 @@ if global.talFotM == true
 		}
 	}
 }
+
+//Attuned to the Void
+if global.talAttV == true
+{
+	if global.sanity == false and global.madness == false
+	{
+		if alarm[0] == -1
+		{
+			alarm[0] = room_speed*global.AttVcdrSecs
+		}
+	}
+}

@@ -11,7 +11,10 @@ else
 
 if focus == false && wasfocus == true
 {
-	instance_deactivate_object(talSetting)
+	if instance_exists(talSetting)
+	{
+		instance_deactivate_object(talSetting)
+	}
 	wasfocus = false;
 }
 

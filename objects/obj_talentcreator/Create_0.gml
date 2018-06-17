@@ -101,7 +101,7 @@ with tal7
 {
 	image_index = 7;
 	talentName = "Attuned to the Void"
-	talentText = "(not yet implemented)"
+	talentText = "For each second spent in Voidform, reduce the remaining cooldown on Surrender to Madness by " + string(global.talAttVCDR) + " seconds"
 	leftText = "Cooldown reduction"
 	rightText = "per second"
 	focus = global.talAttV

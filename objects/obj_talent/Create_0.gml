@@ -7,6 +7,7 @@ wasfocus = true;
 
 mouseover = false;
 
+talSetting = -1
 
 image_speed = 0;
 
