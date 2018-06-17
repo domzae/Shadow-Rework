@@ -31,7 +31,7 @@ with tal1
 tal2 = instance_create_depth(col2,row1,-8,obj_talent)
 with tal2
 {
-	image_index = 0;
+	image_index = 2;
 	talentName = "Mind Shatter"
 	talentText = "(not yet implemented)"
 	leftText = "Max Charges"
@@ -44,7 +44,7 @@ with tal2
 tal3 = instance_create_depth(col3,row1,-7,obj_talent)
 with tal3
 {
-	image_index = 0;
+	image_index = 3;
 	talentName = "Talent 3"
 	talentText = "(not yet implemented)"
 	leftText = ""
@@ -58,7 +58,7 @@ with tal3
 tal4 = instance_create_depth(col1,row2,-6,obj_talent)
 with tal4
 {
-	image_index = 0;
+	image_index = 4;
 	talentName = "Blackout"
 	talentText = "(not yet implemented)"
 	leftText = "Dot duration increase"
@@ -71,9 +71,9 @@ with tal4
 tal5 = instance_create_depth(col2,row2,-5,obj_talent)
 with tal5
 {
-	image_index = 0;
+	image_index = 5;
 	talentName = "Misery"
-	talentText = "(not yet implemented)"
+	talentText = "Vampiric Touch also applies Shadow Word: Pain"
 	leftText = ""
 	rightText = ""
 	focus = global.talMisery
@@ -84,7 +84,7 @@ with tal5
 tal6 = instance_create_depth(col3,row2,-4,obj_talent)
 with tal6
 {
-	image_index = 0;
+	image_index = 6;
 	talentName = "Dark Void"
 	talentText = "(not yet implemented)"
 	leftText = "Insanity generated"
@@ -99,7 +99,7 @@ with tal6
 tal7 = instance_create_depth(col1,row3,-3,obj_talent)
 with tal7
 {
-	image_index = 0;
+	image_index = 7;
 	talentName = "Attuned to the Void"
 	talentText = "(not yet implemented)"
 	leftText = "Cooldown reduction"
@@ -112,7 +112,7 @@ with tal7
 tal8 = instance_create_depth(col2,row3,-2,obj_talent)
 with tal8
 {
-	image_index = 0;
+	image_index = 8;
 	talentName = "Hymn of Sorrow"
 	talentText = "(not yet implemented)"
 	leftText = "Insanity generated"
@@ -125,7 +125,7 @@ with tal8
 tal9 = instance_create_depth(col3,row3,-1,obj_talent)
 with tal9
 {
-	image_index = 0;
+	image_index = 9;
 	talentName = "Void Entropy"
 	talentText = "(not yet implemented)"
 	leftText = "Cooldown"

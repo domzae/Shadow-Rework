@@ -20,7 +20,7 @@ if (global.madness == true and (abilityName == "Void Eruption" or abilityName ==
 		if alarm[0] > 1
 		{
 			alarm[0] = -1
-			if abilityName == "Void Eruption"
+			if cdHold > 0
 			{
 				image_index --;
 			}

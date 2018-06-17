@@ -20,10 +20,26 @@ if global.casting == true
 	if dotTime > 0
 	{
 		if dotApplied == false
-			{
-				image_index ++;
-			}
+		{
+			image_index ++;
+		}
 		dotApplied = true;
 		alarm[4] = dotTime*room_speed;
+	
+		if global.talMisery == true
+		{
+			with inst_swpain
+			{
+				if dotTime > 0
+				{
+					if dotApplied == false
+					{
+						image_index ++;
+					}
+					dotApplied = true;
+					alarm[4] = dotTime*room_speed;
+				}
+			}
+		}
 	}
 }
