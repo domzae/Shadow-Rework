@@ -1,6 +1,6 @@
 /// @description tentacle proc tick
 
-if ticks < 3 && global.madness == false
+if ticks < 4 && global.madness == false
 {
 	global.insanity += global.insgainCttV/4;
 }

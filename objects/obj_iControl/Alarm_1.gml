@@ -17,5 +17,6 @@ else //exit normal madness
 	alarm[2] = global.satiatedTime*room_speed	//insanity drain debuff
 
 	global.madness = false;
+	obj_talentControl.revdrain = false;
 }
 

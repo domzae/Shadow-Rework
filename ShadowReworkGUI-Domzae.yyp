@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "4a3f6132-1f0d-490e-834e-9b73fd53ebae",
+            "Value": {
+                "id": "0eb5e550-0766-477b-88a3-e2c3ad8fbe4f",
+                "resourcePath": "objects\\obj_talentControl\\obj_talentControl.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4e1a22de-ad03-4bfe-b55c-facd74647051",
             "Value": {
                 "id": "72cbe673-2849-4609-b18c-90843b015d15",

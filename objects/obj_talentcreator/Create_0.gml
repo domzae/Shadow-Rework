@@ -18,9 +18,9 @@ row3 = y + 400
 tal1 = instance_create_depth(col1,row1,-9,obj_talent)
 with tal1
 {
-	image_index = 0;
+	image_index = 1;
 	talentName = "Fortress of the Mind"
-	talentText = "(not yet implemented)"
+	talentText = "Passively generate insanity up to " + string(global.talFotMins) + " instead of losing it"
 	leftText = "Insanity equillibrium"
 	rightText = "Generate up to this much insanity"
 	focus = global.talFotM

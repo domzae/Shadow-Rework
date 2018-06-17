@@ -68,7 +68,7 @@ if abilityName == "Mind Flay" //tentacle proc
 	
 	
 
-	mouseoverText = "Has a chance (" + string(global.CttVrppm) + " RPPM) to proc a tentacle,\ngenerating " + string(global.insgainCttV) + " insanity over 6s . Max 1.\nCurrent proc chance: " + string_format(procchance,5,1) + "%";
+	mouseoverText = "Has a chance (" + string(global.CttVrppm) + " RPPM) to proc a tentacle,\ngenerating " + string(global.insgainCttV) + " insanity over 6s . Max 1.\nCurrent proc chance: " + string_format(procchance,3,0) + "%";
 	
 }
 

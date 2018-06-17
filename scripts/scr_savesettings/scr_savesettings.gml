@@ -39,4 +39,31 @@ ini_write_real("Insanity","SW: Pain Insanity",global.insgainSWPain);
 ini_write_real("Insanity","Vampiric Touch Insanity",global.insgainVT);
 ini_write_real("Insanity","Call to the Void Insanity",global.insgainCttV);
 
+//other
+ini_write_real("Other","Multiple Talents per Row",global.multiTal);
+
+//talents
+ini_write_real("Talents","Fortress of the Mind",global.talFotM);
+ini_write_real("Talents","FotM Insanity Eq",global.talFotMins);
+
+ini_write_real("Talents","Mind Shatter",global.talMindShatter);
+ini_write_real("Talents","Mind Shatter Charges",global.talMindShatterCharges);
+
+ini_write_real("Talents","Blackout",global.talBlackout);
+ini_write_real("Talents","Blackout DoT increase",global.talBlackoutDotInc);
+
+ini_write_real("Talents","Misery",global.talMisery);
+
+ini_write_real("Talents","Dark Void",global.talDarkVoid);
+ini_write_real("Talents","Dark Void Insanity",global.talDarkVoidins);
+
+ini_write_real("Talents","Attuned to the Void",global.talAttV);
+ini_write_real("Talents","Attuned to the Void CDR",global.talAttVCDR);
+
+ini_write_real("Talents","Hymn of Sorrow",global.talHoS);
+ini_write_real("Talents","Hymn of Sorrow Insanity",global.talHoSins);
+
+ini_write_real("Talents","Void Entropy",global.talVEntropy);
+ini_write_real("Talents","Void Entropy CD",global.talVEntropyCD);
+
 ini_close();
