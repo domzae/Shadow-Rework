@@ -1,4 +1,4 @@
-/// @description ss
+/// @description cursor blink
 // You can write your code in this editor
 if (cursor=="|") 
 {

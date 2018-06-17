@@ -1,4 +1,4 @@
-//draw_outline_text(x, y, outline color, string color, string)  
+//draw_outline_text(x, y, outline color, string color, string, sep, w)  
 var xx,yy;  
 xx = argument[0];  
 yy = argument[1];  

@@ -10,6 +10,10 @@ else if goto == 2
 {
 	var text = "Info"
 }
+else if goto == 3
+{
+	var text = "Talents"
+}
 
 draw_self();
 draw_set_font(fnt_settings);
