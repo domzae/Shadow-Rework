@@ -7,3 +7,4 @@ with obj_abilities
 }
 
 file_text_close(file);
+

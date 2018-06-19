@@ -4,6 +4,8 @@ if room == 0
 	global.madness = false;
 	global.surrender = false;
 	instance_destroy(obj_proc); //destroy procs to prevent keybind interference
-	scr_savekeybinds();
+	instance_activate_all();
+
 }
-room_goto(goto);
+alarm[0] = 1
+

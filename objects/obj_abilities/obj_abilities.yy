@@ -358,7 +358,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "`",
+            "value": "0",
             "varName": "keybind",
             "varType": 2
         }
