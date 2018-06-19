@@ -8,7 +8,7 @@ else
 }
 
 
-scr_savesettings();
+scr_savesettings("settings.ini");
 
 recent = true;
 alarm[0] = 1;

@@ -1,8 +1,12 @@
-if file_exists(working_directory + "settings.ini")
+//scr_savesettings(file)
+
+var file = argument[0]
+
+if file_exists(working_directory + file)
 {
-	file_delete(working_directory + "settings.ini")
+	file_delete(working_directory + file)
 }
-ini_open(working_directory + "settings.ini");
+ini_open(working_directory + file);
 //general
 ini_write_real("General","Base Drain",global.basedrain);
 ini_write_real("General","Drain",global.drain);
