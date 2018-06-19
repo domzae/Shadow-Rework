@@ -27,7 +27,7 @@ if global.talAttV == true
 	{
 		if alarm[0] == -1
 		{
-			alarm[0] = room_speed*global.AttVcdrSecs
+			alarm[0] = room_speed*global.talAttVInterval
 		}
 	}
 }

@@ -59,14 +59,18 @@ global.talMisery = ini_read_real("Talents","Misery",false);
 
 global.talDarkVoid = ini_read_real("Talents","Dark Void",false);
 global.talDarkVoidins = ini_read_real("Talents","Dark Void Insanity",6);
+global.talDarkVoidCD = ini_read_real("Talents","Dark Void Cooldown", 35);
 
 global.talAttV = ini_read_real("Talents","Attuned to the Void",false);
-global.talAttVCDR = ini_read_real("Talents","Attuned to the Void CDR",0.5);
+global.talAttVCDR = ini_read_real("Talents","Attuned to the Void CDR",1);
+global.talAttVInterval = ini_read_real("Talents","Attuned to the Void Interval",2);
 
 global.talHoS = ini_read_real("Talents","Hymn of Sorrow",false);
 global.talHoSins = ini_read_real("Talents","Hymn of Sorrow Insanity",36);
+global.talHoSpause = ini_read_real("Talents","Hymn of Sorrow Drain Pause",true);
 
 global.talVEntropy = ini_read_real("Talents","Void Entropy",false);
 global.talVEntropyCD = ini_read_real("Talents","Void Entropy CD",18);
+global.talVEntropyCDR = ini_read_real("Talents","Void Entropy CDR",2);
 
 ini_close();

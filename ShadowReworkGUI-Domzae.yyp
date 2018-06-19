@@ -199,11 +199,27 @@
             }
         },
         {
+            "Key": "3b852831-3b02-4fc2-a643-5cbc739eea18",
+            "Value": {
+                "id": "ac355301-5873-4a46-a214-bf3285355e0e",
+                "resourcePath": "sprites\\spr_talentability\\spr_talentability.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3fdb4394-2f93-4fb9-b7d9-19cf78445315",
             "Value": {
                 "id": "a992e3b6-d8f5-44c1-a524-e105689495f2",
                 "resourcePath": "rooms\\Talents\\Talents.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "415c1442-db07-4594-bb57-6a91dfd9d5d9",
+            "Value": {
+                "id": "0343ed3a-dead-4c04-8123-08c2c19ef6c8",
+                "resourcePath": "objects\\obj_abilities_talent\\obj_abilities_talent.yy",
+                "resourceType": "GMObject"
             }
         },
         {

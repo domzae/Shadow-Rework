@@ -1,4 +1,4 @@
-
+x = room_width/2
 
 //set global variables initially, which can be altered in settings room
 if !variable_global_exists("drain")
@@ -23,6 +23,8 @@ if !variable_global_exists("drain")
 madnessTimeLeft = 0;
 madnessStart = true;
 global.surrenderStart = true;
+global.drainPause = false;
+drainWasPause = false;
 
 //begin drain
 alarm_set(0, 1);

@@ -111,6 +111,48 @@
             "value": "0",
             "varName": "talSet",
             "varType": 0
+        },
+        {
+            "id": "a21a1403-61ee-44c0-b4d4-0f2ec3d0334a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "talSet2",
+            "varType": 0
+        },
+        {
+            "id": "5984dc51-eac5-4ac4-80ee-c128a6c7acc1",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "",
+            "varName": "leftText2",
+            "varType": 2
+        },
+        {
+            "id": "fd13d230-a9c7-4f6a-a11b-4d20309e52fc",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "",
+            "varName": "rightText2",
+            "varType": 2
         }
     ],
     "solid": false,

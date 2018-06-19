@@ -36,6 +36,19 @@ if abilityName == "Shadow Word: Death"
 		obj_debuff_SWD.debuffLeft ++;
 	}
 }
+
+if abilityName == "Void Bolt" && instance_exists(inst_VEntropy)
+{
+	if inst_VEntropy.alarm[0] > global.talVEntropyCDR*room_speed
+	{
+		inst_VEntropy.alarm[0] -= global.talVEntropyCDR*room_speed
+	}
+	else if inst_VEntropy.alarm[0] != -1
+	{
+		inst_VEntropy.alarm[0] = 1
+	}
+	
+}
 		
 if global.madness == false
 {
@@ -44,7 +57,7 @@ if global.madness == false
 		
 if dotTime > 0
 {
-	if dotApplied == false
+	if dotApplied == false && abilityName != "Void Entropy"
 	{
 		image_index ++;
 	}

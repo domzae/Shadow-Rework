@@ -1,5 +1,11 @@
 if global.surrender == true
 {
+	if drainWasPause == true
+	{
+		alarm[0] = 1
+		drainWasPause = false
+	}
+	
 	if global.surrenderStart = true		//set things for surrender
 	{
 		
@@ -28,6 +34,17 @@ if global.surrender == true
 
 else if global.madness == false // sanity<->voidform haste
 {
+	if global.drainPause == true
+	{
+		alarm[0] = -1
+		drainWasPause = true
+	}
+	else if drainWasPause == true
+	{
+		alarm[0] = 1
+		drainWasPause = false
+	}
+	
 	if global.insanity > 49 and global.insanity < 100 //voidform
 	{
 		global.haste = global.basehaste + global.vfhaste ;
@@ -48,6 +65,12 @@ else if global.madness == false // sanity<->voidform haste
 }
 else //madness start
 {
+	if drainWasPause == true
+	{
+		alarm[0] = 1
+		drainWasPause = false
+	}
+	
 	if madnessStart = true		//set things for madness
 	{	
 		alarm[2] = -1;
@@ -65,3 +88,4 @@ else //madness start
 		madnessTimeLeft -= 1;
 	}
 }
+

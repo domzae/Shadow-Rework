@@ -63,4 +63,20 @@ if global.casting == true
 			}
 		}
 	}
+	
+	if abilityName == "Dark Void"
+	{
+		with inst_swpain
+		{
+			if dotTime > 0
+			{
+				if dotApplied == false
+				{
+					image_index ++;
+				}
+				dotApplied = true;
+				alarm[4] = dotTime*room_speed;
+			}
+		}
+	}
 }

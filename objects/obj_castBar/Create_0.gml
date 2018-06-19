@@ -1,3 +1,5 @@
+x = room_width/2
+
 global.casting=false;
 global.castingTime=0;
 

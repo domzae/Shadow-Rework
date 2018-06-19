@@ -59,6 +59,7 @@ with tal6
 		global.talDarkVoid = false
 	}
 	global.talDarkVoidins = real(talSetting.userinput);
+	global.talDarkVoidCD = real(talSetting2.userinput);
 }
 with tal7
 {
@@ -83,6 +84,7 @@ with tal8
 		global.talHoS = false
 	}
 	global.talHoSins = real(talSetting.userinput);
+	global.talHoSpause = bool(talSetting2.userinput);
 }
 with tal9
 {
@@ -95,4 +97,5 @@ with tal9
 		global.talVEntropy = false
 	}
 	global.talVEntropyCD = real(talSetting.userinput);
+	global.talVEntropyCDR = real(talSetting2.userinput);
 }

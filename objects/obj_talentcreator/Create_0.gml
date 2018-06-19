@@ -9,8 +9,8 @@ col2 = x + spr_w
 col3 = x + spr_w*2
 
 row1 = y
-row2 = y + 200
-row3 = y + 400
+row2 = y + 250
+row3 = y + 500
 
 /////////
 //ROW 1//
@@ -60,7 +60,7 @@ with tal4
 {
 	image_index = 4;
 	talentName = "Blackout"
-	talentText = "(not yet implemented)"
+	talentText = "Mind Blast increases the remaining time on Shadow Word: Pain and Vampiric Touch by " + string(global.talBlackoutDotInc) + " seconds"
 	leftText = "Dot duration increase"
 	rightText = "seconds"
 	focus = global.talBlackout
@@ -86,12 +86,16 @@ with tal6
 {
 	image_index = 6;
 	talentName = "Dark Void"
-	talentText = "(not yet implemented)"
+	talentText = "Unleash an explosion of dark energy, applying Shadow Word: Pain to each target hit. Generates " + string(global.talDarkVoidins) + " insanity per target hit. (number of targets set by Mind Sear settings)"
 	leftText = "Insanity generated"
 	rightText = "per target"
 	focus = global.talDarkVoid
 	talSet = global.talDarkVoidins;
 	row = 2
+	//second setting
+	leftText2 = "Cooldown"
+	rightText2 = "seconds"
+	talSet2 = global.talDarkVoidCD;
 }
 /////////
 //ROW 3//
@@ -101,12 +105,16 @@ with tal7
 {
 	image_index = 7;
 	talentName = "Attuned to the Void"
-	talentText = "For each second spent in Voidform, reduce the remaining cooldown on Surrender to Madness by " + string(global.talAttVCDR) + " seconds"
+	talentText = "For every " + string(global.talAttVInterval) + " second spent in Voidform, reduce the remaining cooldown on Surrender to Madness by " + string(global.talAttVCDR) + " seconds"
 	leftText = "Cooldown reduction"
-	rightText = "per second"
+	rightText = "per interval"
 	focus = global.talAttV
 	talSet = global.talAttVCDR;
 	row = 3
+	//second setting
+	leftText2 = "Interval"
+	rightText2 = "seconds in Voidform to apply CDR"
+	talSet2 = global.talAttVInterval;
 }
 
 tal8 = instance_create_depth(col2,row3,-2,obj_talent)
@@ -114,12 +122,16 @@ with tal8
 {
 	image_index = 8;
 	talentName = "Hymn of Sorrow"
-	talentText = "(not yet implemented)"
+	talentText = "Channels over 4 seconds, generates " + string(global.talHoSins) + " insanity"
 	leftText = "Insanity generated"
 	rightText = "over its duration"
 	focus = global.talHoS
 	talSet = global.talHoSins;
 	row = 3
+	//second setting
+	leftText2 = "Pause passive drain"
+	rightText2 = "1 = pause\n0 = continue"
+	talSet2 = real(global.talHoSpause);
 }
 
 tal9 = instance_create_depth(col3,row3,-1,obj_talent)
@@ -127,10 +139,14 @@ with tal9
 {
 	image_index = 9;
 	talentName = "Void Entropy"
-	talentText = "(not yet implemented)"
+	talentText = "Applies a DoT for 12s, Void Bolt reduces the remaining cooldown by " + string(global.talVEntropyCDR) + " seconds"
 	leftText = "Cooldown"
-	rightText = ""
+	rightText = "seconds"
 	focus = global.talVEntropy
 	talSet = global.talVEntropyCD;
 	row = 3
+	//second setting
+	leftText2 = "CDR per bolt"
+	rightText2 = "seconds"
+	talSet2 = global.talVEntropyCDR
 }
