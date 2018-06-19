@@ -1,3 +1,3 @@
 event_inherited();
 
-text = "Copy settings to clipboard";
+text = "Import settings from clipboard";
