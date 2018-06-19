@@ -13,8 +13,9 @@ inst_mindsear.alarm[2] = -1;
 		
 if instance_exists(inst_HoS)
 {
-	inst_HoS.alarm[0] = -1;
+	//inst_HoS.alarm[0] = -1;
 	inst_HoS.alarm[1] = -1;
+	global.drainPause = false
 	inst_HoS.alarm[2] = -1;
 }
 
