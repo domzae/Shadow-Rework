@@ -33,7 +33,7 @@ with tal2
 {
 	image_index = 2;
 	talentName = "Mind Shatter"
-	talentText = "(not yet implemented)"
+	talentText = "Mind Blast now has " + string(global.talMindShatterCharges) + " charges" 
 	leftText = "Max Charges"
 	rightText = "Mind Blast"
 	focus = global.talMindShatter

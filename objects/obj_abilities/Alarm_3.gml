@@ -62,6 +62,37 @@ if global.casting == true
 				}
 			}
 		}
+		
+		if talMindShatterChargesLeft > 0 and talMindShatterChargesLeft <= global.talMindShatterCharges
+		{
+			for (var i=global.talMindShatterCharges; i > 0 ; i--;)
+			{
+				if shatterInst[i].alarm[0] = -1
+				{
+					shatterInst[i].alarm[0] = cd
+					
+					if talMindShatterChargesLeft < global.talMindShatterCharges
+					{
+						var maxi = 0;
+						for (var e=global.talMindShatterCharges; e > 0 ; e--;)
+						{
+							if i != e
+							{
+								maxi = max(maxi,shatterInst[e].alarm[0])
+							}
+						}
+						shatterInst[i].alarm[0] += maxi
+					}
+					
+					talMindShatterChargesLeft --;
+					if talMindShatterChargesLeft > 0
+					{
+						image_index --;
+					}
+					break;
+				}
+			}
+		}
 	}
 	
 	if abilityName == "Dark Void"

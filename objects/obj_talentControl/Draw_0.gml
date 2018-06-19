@@ -1,3 +1,12 @@
+//draw Mind Shatter charges
+
+if global.talMindShatter == true
+{
+	draw_outline_text(inst_mindblast.x, inst_mindblast.y-60,c_black,c_yellow,string(inst_mindblast.talMindShatterChargesLeft))
+}
+
+
+
 var rowspace = 80
 var colspace = 80
 

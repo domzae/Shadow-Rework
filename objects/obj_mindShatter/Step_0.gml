@@ -1,0 +1,1 @@
+cd = cdhasted*global.gcd

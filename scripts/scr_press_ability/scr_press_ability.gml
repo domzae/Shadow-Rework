@@ -22,7 +22,7 @@ else if isVoid == true and global.sanity == true
 {
 }
 //check GCD //check own CD
-else if global.gcdLeft == 0 and cdLeft == 0
+else if global.gcdLeft == 0 and (cdLeft == 0 or inst_mindblast.talMindShatterChargesLeft > 0)
 {
 	
 	//set gcd

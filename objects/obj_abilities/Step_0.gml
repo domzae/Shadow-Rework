@@ -72,6 +72,17 @@ if abilityName == "Mind Flay" //tentacle proc
 	
 }
 
+if global.talMindShatter == true && abilityName = "Mind Blast" && talMindShatterChargesLeft < global.talMindShatterCharges
+{
+	for (var i=global.talMindShatterCharges; i > 0 ; i--;)
+	{
+		if shatterInst[i].alarm[0] != -1 and (shatterInst[i].alarm[0] < alarm[0] or alarm[0] == -1)
+		{
+			alarm[0] = shatterInst[i].alarm[0]
+		}
+	}
+}
+
 //set binding
 var k=keyboard_lastkey;
 var c=keyboard_lastchar;
