@@ -1,8 +1,9 @@
 //draw Mind Shatter charges
 
+draw_set_font(fnt_basic)
 if global.talMindShatter == true
 {
-	draw_outline_text(inst_mindblast.x, inst_mindblast.y-60,c_black,c_yellow,string(inst_mindblast.talMindShatterChargesLeft))
+	draw_outline_text(inst_mindblast.x-50, inst_mindblast.y-60,c_black,c_lime,string(inst_mindblast.talMindShatterChargesLeft))
 }
 
 

@@ -1,4 +1,4 @@
-if room = 0
+if room == 0
 {
 	scr_savekeybinds();
 }

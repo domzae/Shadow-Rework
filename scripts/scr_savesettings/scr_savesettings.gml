@@ -66,6 +66,7 @@ ini_write_real("Talents","Attuned to the Void CDR",global.talAttVCDR);
 
 ini_write_real("Talents","Hymn of Sorrow",global.talHoS);
 ini_write_real("Talents","Hymn of Sorrow Insanity",global.talHoSins);
+ini_write_real("Talents","Hymn of Sorrow Cooldown",global.talHoSCD);
 
 ini_write_real("Talents","Void Entropy",global.talVEntropy);
 ini_write_real("Talents","Void Entropy CD",global.talVEntropyCD);

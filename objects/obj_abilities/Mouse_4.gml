@@ -1,1 +1,1 @@
-scr_press_ability();
+//scr_press_ability();

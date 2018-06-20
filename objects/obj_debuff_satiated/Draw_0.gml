@@ -9,7 +9,7 @@ if debuffLeft > 0
 	draw_set_valign(fa_top)
 	if focus == true
 	{
-		draw_sprite(spr_abilityover,0,x+sprite_width/2-3,y+sprite_height/2-6);
+		draw_sprite(spr_abilityover,0,x+sprite_width/2,y+sprite_height/2);
 		draw_tooltip_mouse(tooltipText,0);
 	}
 }

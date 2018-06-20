@@ -129,9 +129,12 @@ with tal8
 	talSet = global.talHoSins;
 	row = 3
 	//second setting
-	leftText2 = "Pause passive drain"
+	/*leftText2 = "Pause passive drain"
 	rightText2 = "1 = pause\n0 = continue"
-	talSet2 = real(global.talHoSpause);
+	talSet2 = real(global.talHoSpause);*/
+	leftText2 = "Cooldown"
+	rightText2 = "seconds"
+	talSet2 = real(global.talHoSCD);
 }
 
 tal9 = instance_create_depth(col3,row3,-1,obj_talent)

@@ -6,7 +6,7 @@ if global.casting == true
 	global.castingTime = 0;
 	
 	//desaturate image
-	if cd > 0
+	if cd > 0 or abilityName == "Mind Blast"
 	{
 		image_index ++;
 	}

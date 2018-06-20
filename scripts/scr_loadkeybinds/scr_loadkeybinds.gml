@@ -4,7 +4,6 @@ with obj_abilities
 {
 	keybind = string_char_at(file_text_read_string(file),1);
 	file_text_readln(file);
-	show_debug_message(string(keybind))
 }
 
 file_text_close(file);

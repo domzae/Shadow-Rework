@@ -84,7 +84,7 @@ with tal8
 		global.talHoS = false
 	}
 	global.talHoSins = real(talSetting.userinput);
-	global.talHoSpause = bool(talSetting2.userinput);
+	global.talHoSCD = real(talSetting2.userinput);
 }
 with tal9
 {

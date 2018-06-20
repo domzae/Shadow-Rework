@@ -22,3 +22,15 @@ with talSetting2
 		rightText = callingTal.rightText2
 	}
 }
+
+if focus == true
+{
+	if leftText == ""
+	{
+		instance_deactivate_object(talSetting)
+	}
+	if leftText2 == ""
+	{
+		instance_deactivate_object(talSetting2)
+	}
+}

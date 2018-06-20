@@ -64,6 +64,7 @@ global.talAttVInterval = ini_read_real("Talents","Attuned to the Void Interval",
 global.talHoS = ini_read_real("Talents","Hymn of Sorrow",false);
 global.talHoSins = ini_read_real("Talents","Hymn of Sorrow Insanity",36);
 global.talHoSpause = ini_read_real("Talents","Hymn of Sorrow Drain Pause",true);
+global.talHoSCD = ini_read_real("Talents","Hymn of Sorrow Cooldown",40);
 
 global.talVEntropy = ini_read_real("Talents","Void Entropy",false);
 global.talVEntropyCD = ini_read_real("Talents","Void Entropy CD",18);
