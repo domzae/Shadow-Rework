@@ -22,10 +22,19 @@ if scr_ability_check()
 		global.insanity = global.insanity + insanityGain;
 	}
 		
-	if dotTime > 0
+	var tempDoT = 0;
+	if dotApplied == false 
 	{
 		dotApplied = true;
-		alarm[4] = dotTime*room_speed;
 	}
+	else if alarm[4] > (dotTime*0.3)*room_speed
+	{
+		tempDoT = dotTime*0.3*room_speed
+	}
+	else
+	{
+		tempDoT = alarm[4]
+	}
+	alarm[4] = dotTime*room_speed + tempDoT;
 
 }

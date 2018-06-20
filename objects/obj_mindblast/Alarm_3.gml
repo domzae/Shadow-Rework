@@ -22,6 +22,7 @@ if global.casting == true
 			if dotApplied == true
 			{
 				alarm[4] = alarm[4] + global.talBlackoutDotInc*room_speed;
+				alarm[7] = alarm[7] + global.talBlackoutDotInc*room_speed;
 			}
 		}
 		with inst_vampirictouch

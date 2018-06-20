@@ -1,0 +1,16 @@
+{
+    "id": "5531c923-c788-4ab2-afac-3ca63b293da1",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "5531c923-c788-4ab2-afac-3ca63b293da1",
+    "children": [
+        "3a7b4d61-54b2-448a-b577-93f2e9345655",
+        "b8187701-7014-473b-91a8-e2e38a1c29fc",
+        "00d808d7-8f24-4b14-a7bf-876761d69af4",
+        "d34f7513-d415-4667-b725-2a6958edfc0c"
+    ],
+    "filterType": "GMScript",
+    "folderName": "Draw",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

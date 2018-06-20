@@ -12,6 +12,7 @@ if cd > 0
 {
 	cd *= room_speed;
 }
+event_perform_object(obj_abilityControl,ev_create,0)
 
 //mind shatter talent
 /*if global.talMindShatter == true and id == inst_mindblast.id

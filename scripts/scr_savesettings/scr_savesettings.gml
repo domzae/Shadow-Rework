@@ -53,6 +53,9 @@ ini_write_real("Talents","FotM Insanity Eq",global.talFotMins);
 ini_write_real("Talents","Mind Shatter",global.talMindShatter);
 ini_write_real("Talents","Mind Shatter Charges",global.talMindShatterCharges);
 
+ini_write_real("Talents","Pain Discharge",global.talPainDischarge);
+ini_write_real("Talents","Pain Discharge Insanity",global.talPainDischargeins);
+
 ini_write_real("Talents","Blackout",global.talBlackout);
 ini_write_real("Talents","Blackout DoT increase",global.talBlackoutDotInc);
 
@@ -70,5 +73,6 @@ ini_write_real("Talents","Hymn of Sorrow Cooldown",global.talHoSCD);
 
 ini_write_real("Talents","Void Entropy",global.talVEntropy);
 ini_write_real("Talents","Void Entropy CD",global.talVEntropyCD);
+ini_write_real("Talents","Void Entropy CDR",global.talVEntropyCDR);
 
 ini_close();

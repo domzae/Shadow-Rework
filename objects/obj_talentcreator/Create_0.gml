@@ -45,11 +45,12 @@ tal3 = instance_create_depth(col3,row1,-7,obj_talent)
 with tal3
 {
 	image_index = 3;
-	talentName = "Talent 3"
-	talentText = "(not yet implemented)"
-	leftText = ""
+	talentName = "Pain Discharge"
+	talentText = "When Shadow Word: Pain expires, generate " + string(global.talPainDischargeins) + " insanity"
+	leftText = "Insanity"
 	rightText = ""
-	talSet = 0;
+	focus = global.talPainDischarge
+	talSet = global.talPainDischargeins;
 	row = 1
 }
 /////////

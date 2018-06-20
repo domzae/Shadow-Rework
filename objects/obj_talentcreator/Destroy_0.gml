@@ -24,6 +24,15 @@ with tal2
 }
 with tal3
 {
+	if focus == true
+	{
+		global.talPainDischarge = true
+	}
+	else
+	{
+		global.talPainDischarge = false
+	}
+	global.talPainDischargeins = real(talSetting.userinput);
 }
 with tal4
 {

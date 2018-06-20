@@ -5,6 +5,8 @@ var filename = argument[0]
 
 ini_open(working_directory + filename)
 
+scr_importsettings()
+/*
 global.basedrain = ini_read_real("General","Base Drain",room_speed/5);
 global.drain = ini_read_real("General","Drain",room_speed/5);
 global.basehaste = ini_read_real("General","Base Haste",20);

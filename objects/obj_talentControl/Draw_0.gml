@@ -30,10 +30,10 @@ if global.talMindShatter == true
 {
 	draw_sprite(spr_talenticon,2,col2,row1);
 }
-//if global.tal? == true
-//{
-	//emptytal
-//}
+if global.talPainDischarge == true
+{
+	draw_sprite(spr_talenticon,3,col2,row1);
+}
 if global.talBlackout == true
 {
 	draw_sprite(spr_talenticon,4,col1,row2);

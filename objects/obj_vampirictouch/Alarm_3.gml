@@ -12,26 +12,44 @@ if global.casting == true
 		global.insanity = global.insanity + insanityGain;
 	}
 	
-	if dotApplied == false
+	var tempDoT = 0;
+	if dotApplied == false 
 	{
 		image_index ++;
+		dotApplied = true;
 	}
-	dotApplied = true;
-	alarm[4] = dotTime*room_speed;
+	else if alarm[4] > (dotTime*0.3)*room_speed
+	{
+		tempDoT = dotTime*0.3*room_speed
+	}
+	else
+	{
+		tempDoT = alarm[4]
+	}
+	alarm[4] = dotTime*room_speed + tempDoT;
 	
 	if global.talMisery == true
 	{
 		with inst_swpain
 		{
-			if dotTime > 0
+			var tempDoT = 0;
+			if dotApplied == false 
 			{
-				if dotApplied == false
-				{
-					image_index ++;
-				}
+				image_index ++;
 				dotApplied = true;
-				alarm[4] = dotTime*room_speed;
+				alarm[7] = dotTime*room_speed;
 			}
+			else if alarm[4] > (dotTime*0.3)*room_speed
+			{
+				tempDoT = dotTime*0.3*room_speed
+				alarm[7] = dotTime*room_speed+tempDoT
+			}
+			else
+			{
+				tempDoT = alarm[4]
+				alarm[7] = tempDoT
+			}
+			alarm[4] = dotTime*room_speed + tempDoT;
 		}
 	}
 }
