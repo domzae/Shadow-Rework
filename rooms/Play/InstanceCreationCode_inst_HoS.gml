@@ -1,4 +1,0 @@
-if global.talHoS == false
-{
-	alarm[11] = 1
-}

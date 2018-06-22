@@ -1,6 +1,9 @@
 if global.talPainDischarge == true
 {
-	global.insanity += global.talPainDischargeins
+	if global.madness == false
+	{
+		global.insanity += global.talPainDischargeins
+	}
 	alarm[7] = alarm[4];
 }
 	

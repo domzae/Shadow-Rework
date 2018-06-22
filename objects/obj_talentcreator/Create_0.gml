@@ -11,6 +11,7 @@ col3 = x + spr_w*2
 row1 = y
 row2 = y + 250
 row3 = y + 500
+row4 = y + 750
 
 /////////
 //ROW 1//
@@ -153,4 +154,57 @@ with tal9
 	leftText2 = "CDR per bolt"
 	rightText2 = "seconds"
 	talSet2 = global.talVEntropyCDR
+}
+
+/////////
+//ROW 4//
+/////////
+tal10 = instance_create_depth(col1,row4,-3,obj_talent)
+with tal10
+{
+	image_index = 10;
+	talentName = "Voidlord"
+	talentText = "Void Bolt increases the damage of Void Bolt by x% for y"+/* string(global.talVoidlordDur) +*/" seconds. Additional stacks do not refresh the duration."
+	leftText = "Damage increase"
+	rightText = "per stack"
+	focus = global.talVoidlord
+	talSet = global.talVoidlordDmg;
+	row = 4
+	//second setting
+	leftText2 = "Duration"
+	rightText2 = "seconds"
+	talSet2 = global.talVoidlordDur;
+}
+
+tal11 = instance_create_depth(col2,row4,-2,obj_talent)
+with tal11
+{
+	image_index = 11;
+	talentName = "Focused Insanity"
+	talentText = "While in Voidform your damage is increased up to x% based on how close to y insanity you are."
+	leftText = "Max damage increase"
+	rightText = "percent"
+	focus = global.talFocusedInsanity
+	talSet = global.talFocusedInsanityDmg;
+	row = 4
+	leftText2 = "Peak insanity"
+	rightText2 = ""
+	talSet2 = real(global.talFocusedInsanityPeak);
+}
+
+tal12 = instance_create_depth(col3,row4,-1,obj_talent)
+with tal12
+{
+	image_index = 12;
+	talentName = "Allure to the Void"
+	talentText = "Entering Voidform increases damage of your next madness by x%. Reducing over y seconds."
+	leftText = "Max damage increase"
+	rightText = "percent"
+	focus = global.talAllure
+	talSet = global.talAllureDmg;
+	row = 4
+	//second setting
+	leftText2 = "Decay duration"
+	rightText2 = "seconds"
+	talSet2 = global.talAllureDur
 }

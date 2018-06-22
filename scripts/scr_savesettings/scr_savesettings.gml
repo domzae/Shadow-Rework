@@ -75,4 +75,16 @@ ini_write_real("Talents","Void Entropy",global.talVEntropy);
 ini_write_real("Talents","Void Entropy CD",global.talVEntropyCD);
 ini_write_real("Talents","Void Entropy CDR",global.talVEntropyCDR);
 
+ini_write_real("Talents","Voidlord",global.talVoidlord);
+ini_write_real("Talents","Voidlord Damage",global.talVoidlordDmg);
+ini_write_real("Talents","Voidlord Duration",global.talVoidlordDur);
+
+ini_write_real("Talents","Focused Insanity",global.talFocusedInsanity);
+ini_write_real("Talents","Focused Insanity Damage",global.talFocusedInsanityDmg);
+ini_write_real("Talents","Focused Insanity Peak",global.talFocusedInsanityPeak);
+
+ini_write_real("Talents","Allure",global.talAllure);
+ini_write_real("Talents","Allure Damage",global.talAllureDmg);
+ini_write_real("Talents","Allure Duration",global.talAllureDur);
+
 ini_close();

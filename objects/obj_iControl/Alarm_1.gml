@@ -33,3 +33,7 @@ else //exit normal madness
 	obj_talentControl.revdrain = false;
 }
 
+if global.talAllure == true
+{
+	obj_allure.allure = false
+}

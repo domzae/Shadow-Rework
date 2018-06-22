@@ -4,9 +4,15 @@ draw_set_font(fnt_cd);
 draw_set_halign(fa_middle);
 draw_set_valign(fa_center);
 
+//border
+draw_set_alpha(0.5)
+draw_border(c_gray,-sprite_width/2,-sprite_height/2)
+draw_set_alpha(1)
 
 draw_set_colour(c_yellow);
 draw_set_alpha(($FF000000 >> 24) / $ff);
+
+
 
 
 if cdLeft == 0 or cdLeft == global.gcdLeft

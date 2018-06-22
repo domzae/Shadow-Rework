@@ -1,4 +1,4 @@
-//draw Mind Shatter charges
+//draw Mind Shatter charges60
 
 draw_set_font(fnt_basic)
 if global.talMindShatter == true
@@ -8,6 +8,8 @@ if global.talMindShatter == true
 
 
 
+
+/*
 var rowspace = 80
 var colspace = 80
 
@@ -32,7 +34,7 @@ if global.talMindShatter == true
 }
 if global.talPainDischarge == true
 {
-	draw_sprite(spr_talenticon,3,col2,row1);
+	draw_sprite(spr_talenticon,3,col3,row1);
 }
 if global.talBlackout == true
 {

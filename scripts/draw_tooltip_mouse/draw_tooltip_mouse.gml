@@ -2,6 +2,8 @@
 
 
 draw_set_font(fnt_tooltip);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
 
 var xx = mouse_x + 10;
 var yy = mouse_y + 20;

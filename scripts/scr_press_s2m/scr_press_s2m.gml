@@ -1,13 +1,15 @@
-if scr_ability_check() and global.madness == false //check for GCD //check own CD
+if global.madness == false
 {
-	obj_gcd.alarm[0] = global.gcd;
+	if scr_ability_check() //check for GCD //check own CD
+	{
+		obj_gcd.alarm[0] = global.gcd;
 
-	global.lastGCDinstant = true;
+		global.lastGCDinstant = true;
 	
-	image_index ++;
-	alarm[0] = cd;
+		image_index ++;
+		alarm[0] = cd;
 
-	global.surrender = true;
-	global.surrenderStart = true;
-
+		global.surrender = true;
+		global.surrenderStart = true;
+	}
 }

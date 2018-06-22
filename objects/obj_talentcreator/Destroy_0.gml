@@ -108,3 +108,42 @@ with tal9
 	global.talVEntropyCD = real(talSetting.userinput);
 	global.talVEntropyCDR = real(talSetting2.userinput);
 }
+with tal10
+{
+	if focus == true
+	{
+		global.talVoidlord = true
+	}
+	else
+	{
+		global.talVoidlord = false
+	}
+	global.talVoidlordDmg = real(talSetting.userinput);
+	global.talVoidlordDur = real(talSetting2.userinput);
+}
+with tal11
+{
+	if focus == true
+	{
+		global.talFocusedInsanity = true
+	}
+	else
+	{
+		global.talFocusedInsanity = false
+	}
+	global.talFocusedInsanityDmg = real(talSetting.userinput);
+	global.talFocusedInsanityPeak = real(talSetting2.userinput);
+}
+with tal12
+{
+	if focus == true
+	{
+		global.talAllure = true
+	}
+	else
+	{
+		global.talAllure = false
+	}
+	global.talAllureDmg = real(talSetting.userinput);
+	global.talAllureDur = real(talSetting2.userinput);
+}
