@@ -50,14 +50,14 @@ else if global.madness == false // sanity<->voidform haste
 		global.haste = global.basehaste + global.vfhaste ;
 		global.sanity = false;
 		
-		if global.talAllure == true
+		/*if global.talAllure == true
 		{
 			if obj_allure.allure == false
 			{
 				obj_allure.alarm[0] = global.talAllureDur*room_speed
 				obj_allure.allure = true
 			}
-		}
+		}*/
 	}
 
 	else if global.insanity < 50 //sanity

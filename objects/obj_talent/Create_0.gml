@@ -2,7 +2,7 @@ spr_w = 374;
 spr_h = 93;
 spr_gap = 2;
 
-focus = false;
+//focus = false;
 wasfocus = true;
 
 mouseover = false;

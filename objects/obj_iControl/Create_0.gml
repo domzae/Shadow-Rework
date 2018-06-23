@@ -10,8 +10,8 @@ if !variable_global_exists("drain")
 	
 	//if !file_exists(working_directory + "settings.ini")
 	//{
-		ini_open(working_directory + "settings.ini")
-		scr_loadsettings("settings.ini");
+		ini_open(working_directory + "default.ini")
+		scr_loadsettings("default.ini");
 	//}
 	//else
 	//{

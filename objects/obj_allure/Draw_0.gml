@@ -1,5 +1,5 @@
 //draw Focused Insanity
-if allure == true
+if global.talAllure == true
 {
 	draw_self()
 	draw_set_halign(fa_left)
@@ -9,7 +9,7 @@ if allure == true
 	//draw timer
 	draw_set_alpha(0.5)
 	draw_set_color(c_gray);
-	draw_rectangle(x,y+112,x+112,y+112 - (alarm[0]/(global.talAllureDur*room_speed)*sprite_height),0);
+	//draw_rectangle(x,y+112,x+112,y+112 - (alarm[0]/(global.talAllureDur*room_speed)*sprite_height),0);
 	draw_set_alpha(1)
 	//border
 	draw_border(c_green,0,0)
@@ -18,11 +18,15 @@ if allure == true
 	
 	if global.madness == true
 	{
-		draw_outline_text(x+10,y+sprite_height/2,c_black,c_red,string_format(dmgAllure,2,0) + "%")
+		draw_outline_text(x+10,y+sprite_height/2,c_black,c_yellow,string_format(dmgAllure,2,0) + "%")
+	}
+	else if global.sanity == true
+	{
+		draw_outline_text(x+10,y+sprite_height/2,c_black,c_green,string_format(dmgAllure,2,0) + "%")
 	}
 	else
 	{
-		draw_outline_text(x+10,y+sprite_height/2,c_black,c_green,string_format(dmgAllure,2,0) + "%")
+		draw_outline_text(x+10,y+sprite_height/2,c_black,c_red,string_format(dmgAllure,2,0) + "%")
 	}
 		
 	//mouseover

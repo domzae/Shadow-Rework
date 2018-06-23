@@ -45,13 +45,13 @@ global.multiTal = ini_read_real("Other","Multiple Talents per Row",false);
 global.talFotM = ini_read_real("Talents","Fortress of the Mind",false);
 global.talFotMins = ini_read_real("Talents","FotM Insanity Eq",25);
 
-global.talMindShatter = ini_read_real("Talents","Mind Shatter",true);
+global.talMindShatter = ini_read_real("Talents","Mind Shatter",false);
 global.talMindShatterCharges = ini_read_real("Talents","Mind Shatter Charges",2);
 
 global.talPainDischarge = ini_read_real("Talents","Pain Discharge",false);
 global.talPainDischargeins = ini_read_real("Talents","Pain Discharge Insanity",10);
 
-global.talBlackout = ini_read_real("Talents","Blackout",true);
+global.talBlackout = ini_read_real("Talents","Blackout",false);
 global.talBlackoutDotInc = ini_read_real("Talents","Blackout DoT increase",3);
 
 global.talMisery = ini_read_real("Talents","Misery",false);
@@ -69,11 +69,11 @@ global.talHoSins = ini_read_real("Talents","Hymn of Sorrow Insanity",44);
 global.talHoSpause = ini_read_real("Talents","Hymn of Sorrow Drain Pause",true);
 global.talHoSCD = ini_read_real("Talents","Hymn of Sorrow Cooldown",40);
 
-global.talVEntropy = ini_read_real("Talents","Void Entropy",true);
+global.talVEntropy = ini_read_real("Talents","Void Entropy",false);
 global.talVEntropyCD = ini_read_real("Talents","Void Entropy CD",18);
 global.talVEntropyCDR = ini_read_real("Talents","Void Entropy CDR",2);
 
-global.talVoidlord = ini_read_real("Talents","Voidlord",true);
+global.talVoidlord = ini_read_real("Talents","Voidlord",false);
 global.talVoidlordDmg = ini_read_real("Talents","Voidlord Damage",5);
 global.talVoidlordDur = ini_read_real("Talents","Voidlord Duration",6);
 

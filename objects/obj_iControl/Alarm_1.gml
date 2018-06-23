@@ -35,5 +35,5 @@ else //exit normal madness
 
 if global.talAllure == true
 {
-	obj_allure.allure = false
+	obj_allure.dmgAllure = global.talAllureDmg
 }

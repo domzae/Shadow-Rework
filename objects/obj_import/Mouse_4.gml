@@ -34,6 +34,6 @@ if room == Settings
 }
 else
 {
-	//instance_create_layer(0,128,"Instances",obj_talentcreator);
+	//instance_create_layer(0,64,"Instances",obj_talentcreator);
 	room_restart();
 }
