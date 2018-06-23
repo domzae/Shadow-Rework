@@ -75,6 +75,16 @@ with (setcdS2M)
 	global.cdS2M = real(userinput);
 }
 
+//DoTs
+with (setdurSWPain)
+{
+	global.durSWPain = real(userinput);
+}
+with (setdurVT)
+{
+	global.durVT = real(userinput);
+}
+
 //Insanity gains
 with (setinsgainMindBlast)
 {

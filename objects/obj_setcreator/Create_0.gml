@@ -1,12 +1,12 @@
-y = room_height/18;
+y = room_height/20;
 var yy = 0;		//left column
 var yy2 = 0;	//middle column
 var yy3 = 0;	//right column
 
 x = room_width/11*3;			//left column
-var xx = room_width/7*4;		//middle column
-var xx2 = room_width/8*7;		//right column
-var verticalspacing = 60;
+var mCol = room_width/7*4;		//middle column
+var rCol = room_width/8*7;		//right column
+var verticalspacing = 57;
 
 
 
@@ -90,6 +90,7 @@ with (setinsgainVEruption)
 }
 yy += verticalspacing;
 yy += verticalspacing;
+yy += verticalspacing;
 
 //Shadow Word: Pain
 setinsgainSWPain = instance_create_depth(x, y + yy, 0, obj_settings);
@@ -111,11 +112,11 @@ with (setinsgainVT)
 	leftText = "Vampiric Touch insanity";
 	rightText = "per cast";
 }
-
+/////////////////
 /*MIDDLE COLUMN*/
-
+/////////////////
 //mind blast cooldown
-setcdMindBlast = instance_create_depth(xx, y + yy2, 0, obj_settings);
+setcdMindBlast = instance_create_depth(mCol, y + yy2, 0, obj_settings);
 with (setcdMindBlast)
 {
 	userinput = global.cdMindBlast;
@@ -126,7 +127,7 @@ with (setcdMindBlast)
 yy2 += verticalspacing;
 
 //shadow word: death cooldown
-setcdSWDeath = instance_create_depth(xx, y + yy2, 0, obj_settings);
+setcdSWDeath = instance_create_depth(mCol, y + yy2, 0, obj_settings);
 with (setcdSWDeath)
 {
 	userinput = global.cdSWDeath;
@@ -138,7 +139,7 @@ yy2 += verticalspacing;
 yy2 += verticalspacing;
 
 //sear targets
-setsearTargets = instance_create_depth(xx, y + yy2, 0, obj_settings);
+setsearTargets = instance_create_depth(mCol, y + yy2, 0, obj_settings);
 with (setsearTargets)
 {
 	userinput = global.searTargets;
@@ -150,7 +151,7 @@ yy2 += verticalspacing;
 yy2 += verticalspacing;
 
 //call to the void proc chance
-setCttVrppm = instance_create_depth(xx, y + yy2, 0, obj_settings);
+setCttVrppm = instance_create_depth(mCol, y + yy2, 0, obj_settings);
 with (setCttVrppm)
 {
 	userinput = global.CttVrppm;
@@ -163,7 +164,7 @@ yy2 += verticalspacing;
 yy2 += verticalspacing;
 
 //void bolt cooldown
-setcdVBolt = instance_create_depth(xx, y + yy2, 0, obj_settings);
+setcdVBolt = instance_create_depth(mCol, y + yy2, 0, obj_settings);
 with (setcdVBolt)
 {
 	userinput = global.cdVBolt;
@@ -174,7 +175,7 @@ with (setcdVBolt)
 yy2 += verticalspacing;
 
 //void eruption cooldown
-setcdVEruption = instance_create_depth(xx, y + yy2, 0, obj_settings);
+setcdVEruption = instance_create_depth(mCol, y + yy2, 0, obj_settings);
 with (setcdVEruption)
 {
 	userinput = global.cdVEruption;
@@ -185,7 +186,7 @@ with (setcdVEruption)
 yy2 += verticalspacing;
 
 //shared void cooldown during madness
-setcdSharedVoid = instance_create_depth(xx, y + yy2, 0, obj_settings);
+setcdSharedVoid = instance_create_depth(mCol, y + yy2, 0, obj_settings);
 with (setcdSharedVoid)
 {
 	userinput = global.cdSharedVoid;
@@ -196,40 +197,44 @@ with (setcdSharedVoid)
 yy2 += verticalspacing;
 yy2 += verticalspacing;
 
-setcdS2M = instance_create_depth(xx, y + yy2, 0, obj_settings);
-with (setcdS2M)
+//SWP Duration
+setdurSWPain = instance_create_depth(mCol, y + yy2, 0, obj_settings);
+with (setdurSWPain)
 {
-	userinput = global.cdS2M;
+	userinput = global.durSWPain;
 	maxCharacters = 5;
-	leftText = "Surrender to Madness CD";
-	rightText = "seconds";
+	leftText = "Shadow Word: Pain duration";
+	rightText = "Seconds";
 }
 yy2 += verticalspacing;
-
-//surrender duration
-setsurrenderTime = instance_create_depth(xx, y + yy2, 0, obj_settings);
-with (setsurrenderTime)
+//VT Duration
+setdurVT = instance_create_depth(mCol, y + yy2, 0, obj_settings);
+with (setdurVT)
 {
-	userinput = global.surrenderTime;
+	userinput = global.durVT;
 	maxCharacters = 5;
-	leftText = "Surrender duration";
-	rightText = "seconds - duration of Madness when activated by Surrender to Madness";
-}
-yy2 += verticalspacing;
-
-//surrender exi
-setsurrenderExitIns = instance_create_depth(xx, y + yy2, 0, obj_settings);
-with (setsurrenderExitIns)
-{
-	userinput = global.surrenderExitIns;
-	maxCharacters = 5;
-	leftText = "Surrender exit insanity";
-	rightText = "starting insanity when Surrender to Madness expires";
+	leftText = "Vampiric Touch duration";
+	rightText = "Seconds";
 }
 
-//RIGHT COLUMN
+
+
+////////////////
+/*RIGHT COLUMN*/
+////////////////
+
+//drain
+setdrain = instance_create_depth(rCol, y + yy3, 0, obj_settings);
+with (setdrain)
+{
+	userinput = room_speed/global.basedrain;
+	maxCharacters = 5;
+	leftText = "Insanity drain";
+	rightText = "per second";
+}
+yy3 += verticalspacing;
 //Haste
-sethaste = instance_create_depth(xx2, y + yy3, 0, obj_settings);
+sethaste = instance_create_depth(rCol, y + yy3, 0, obj_settings);
 with (sethaste)
 {
 	userinput = global.basehaste;
@@ -239,20 +244,8 @@ with (sethaste)
 }
 yy3 += verticalspacing;
 
-//drain
-setdrain = instance_create_depth(xx2, y + yy3, 0, obj_settings);
-with (setdrain)
-{
-	userinput = room_speed/global.basedrain;
-	maxCharacters = 5;
-	leftText = "Insanity drain";
-	rightText = "per second";
-}
-yy3 += verticalspacing;
-yy3 += verticalspacing;
-
 //Haste VF
-setvfhaste = instance_create_depth(xx2, y + yy3, 0, obj_settings);
+setvfhaste = instance_create_depth(rCol, y + yy3, 0, obj_settings);
 with (setvfhaste)
 {
 	userinput = global.vfhaste;
@@ -263,7 +256,7 @@ with (setvfhaste)
 yy3 += verticalspacing;
 
 //Haste Madness
-setmadnesshaste = instance_create_depth(xx2, y + yy3, 0, obj_settings);
+setmadnesshaste = instance_create_depth(rCol, y + yy3, 0, obj_settings);
 with (setmadnesshaste)
 {
 	userinput = global.madnesshaste;
@@ -273,10 +266,9 @@ with (setmadnesshaste)
 }
 yy3 += verticalspacing;
 yy3 += verticalspacing;
-yy3 += verticalspacing;
 
 //madness duration
-setmadnessTime = instance_create_depth(xx2, y + yy3, 0, obj_settings);
+setmadnessTime = instance_create_depth(rCol, y + yy3, 0, obj_settings);
 with (setmadnessTime)
 {
 	userinput = global.madnessTime;
@@ -287,7 +279,7 @@ with (setmadnessTime)
 yy3 += verticalspacing;
 
 //madness debuff
-setsatiatedModifier = instance_create_depth(xx2, y + yy3, 0, obj_settings);
+setsatiatedModifier = instance_create_depth(rCol, y + yy3, 0, obj_settings);
 with (setsatiatedModifier)
 {
 	userinput = (global.satiatedModifier*100)-100;
@@ -298,7 +290,7 @@ with (setsatiatedModifier)
 yy3 += verticalspacing;
 
 //madness debuff timer
-setsatiatedTime = instance_create_depth(xx2, y + yy3, 0, obj_settings);
+setsatiatedTime = instance_create_depth(rCol, y + yy3, 0, obj_settings);
 with (setsatiatedTime)
 {
 	userinput = global.satiatedTime;
@@ -308,6 +300,37 @@ with (setsatiatedTime)
 }
 yy3 += verticalspacing;
 yy3 += verticalspacing;
+
+setcdS2M = instance_create_depth(rCol, y + yy3, 0, obj_settings);
+with (setcdS2M)
+{
+	userinput = global.cdS2M;
+	maxCharacters = 5;
+	leftText = "Surrender to Madness CD";
+	rightText = "seconds";
+}
+yy3 += verticalspacing;
+
+//surrender duration
+setsurrenderTime = instance_create_depth(rCol, y + yy3, 0, obj_settings);
+with (setsurrenderTime)
+{
+	userinput = global.surrenderTime;
+	maxCharacters = 5;
+	leftText = "Surrender duration";
+	rightText = "seconds - duration of Madness when activated by Surrender to Madness";
+}
+yy3 += verticalspacing;
+
+//surrender exit
+setsurrenderExitIns = instance_create_depth(rCol, y + yy3, 0, obj_settings);
+with (setsurrenderExitIns)
+{
+	userinput = global.surrenderExitIns;
+	maxCharacters = 5;
+	leftText = "Surrender exit insanity";
+	rightText = "starting insanity when Surrender to Madness expires";
+}
 
 
 

@@ -40,6 +40,8 @@ global.insgainCttV = ini_read_real("Insanity","Call to the Void Insanity", 22);
 
 //other
 global.multiTal = ini_read_real("Other","Multiple Talents per Row",false);
+global.durSWPain = ini_read_real("Other","Shadow Word: Pain Duration",18);
+global.durVT = ini_read_real("Other","Vampiric Touch Duration",22);
 
 //talents
 global.talFotM = ini_read_real("Talents","Fortress of the Mind",false);
