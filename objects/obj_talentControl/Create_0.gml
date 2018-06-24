@@ -4,11 +4,18 @@ revdrain = false;
 
 if global.talFocusedInsanity == true
 {
-	instance_create_depth(x,y,depth-10,obj_talFI)
+	instance_create_depth(x,y,depth-1,obj_talFI)
 }
 if global.talAllure == true
 {
-	instance_create_depth(x,y+120,depth-9,obj_allure)
+	if global.talFocusedInsanity == true
+	{
+		instance_create_depth(x,y+96,depth-1,obj_allure)
+	}
+	else
+	{
+		instance_create_depth(x,y,depth-1,obj_allure)
+	}
 }
 
 if global.talVoidlord == true

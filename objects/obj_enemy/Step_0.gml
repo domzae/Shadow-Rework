@@ -8,3 +8,4 @@ else
 }
 currentHP = clamp(currentHP,0,global.maxHP)
 currentPerc = (currentHP/maxHP)*100
+

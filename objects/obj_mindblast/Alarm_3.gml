@@ -17,19 +17,17 @@ if global.casting == true
 	
 	if global.talBlackout == true
 	{
-		with inst_swpain
+		with thisTar
 		{
-			if dotApplied == true
+			if SWPApplied == true
 			{
-				alarm[4] = alarm[4] + global.talBlackoutDotInc*room_speed;
+				alarm[0] = alarm[0] + global.talBlackoutDotInc*room_speed;
 				alarm[7] = alarm[7] + global.talBlackoutDotInc*room_speed;
 			}
-		}
-		with inst_vampirictouch
-		{
-			if dotApplied == true
+
+			if VTApplied == true
 			{
-				alarm[4] = alarm[4] + global.talBlackoutDotInc*room_speed;
+				alarm[1] = alarm[1] + global.talBlackoutDotInc*room_speed;
 			}
 		}
 	}

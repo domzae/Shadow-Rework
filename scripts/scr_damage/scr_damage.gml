@@ -25,26 +25,17 @@ if random(100-min(100,global.baseCrit)) == 0
 	damage *= 2
 }
 
-//twist of fate - mastery
-with obj_enemy
-{
-	if focus == true
-	{
-		if currentPerc < 100
-		{
-			other.damage *= (1+ ( (1-(currentPerc/100))*global.maxMastery)/100)
-		}
-	}
-}
 
-obj_damage.totalDamage += damage
-
-obj_damage.secondDamage += damage
 
 if focTar == 0 //aoe
 {
 	with obj_enemy
 	{
+		//twist of fate - mastery
+		if currentPerc < 100
+		{
+			other.damage *= (1+ ( (1-(currentPerc/100))*global.maxMastery)/100)
+		}	
 		currentHP -= other.damage/global.aoeTargets
 	}
 }
@@ -52,9 +43,18 @@ else
 {
 	with focTar
 	{
+		//twist of fate - mastery
+		if currentPerc < 100
+		{
+			other.damage *= (1+ ( (1-(currentPerc/100))*global.maxMastery)/100)
+		}	
 		currentHP -= other.damage
 	}
 }
+
+obj_damage.totalDamage += damage
+obj_damage.secondDamage += damage
+
 /*if obj_enemy.focus == true
 {
 	obj_enemy.currentHP -= damage

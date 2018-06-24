@@ -1,2 +1,2 @@
 /// @description Remove debuff
-debuffLeft = 0;
+//debuffLeft = 0;
