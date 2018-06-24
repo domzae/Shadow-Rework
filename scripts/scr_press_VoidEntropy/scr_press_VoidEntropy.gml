@@ -1,5 +1,6 @@
 if scr_ability_check()
-{		
+{	
+	var focTar = global.enemyFocus	
 	global.channeling = false;
 	global.channelingTime = 0;
 		
@@ -23,18 +24,19 @@ if scr_ability_check()
 	}
 		
 	var tempDoT = 0;
-	if dotApplied == false 
+	if focTar.VEApplied == false 
 	{
-		dotApplied = true;
+		focTar.VEApplied = true;
 	}
-	else if alarm[4] > (dotTime*0.3)*room_speed
+	else if focTar.alarm[4] > (dotTime*0.3)*room_speed
 	{
 		tempDoT = dotTime*0.3*room_speed
 	}
 	else
 	{
-		tempDoT = alarm[4]
+		tempDoT = focTar.alarm[4]
 	}
-	alarm[4] = dotTime*room_speed + tempDoT;
+	focTar.alarm[4] = dotTime*room_speed + tempDoT;
+	focTar.alarm[5] = (3*room_speed)/(1+ global.haste/100) //set tick timer
 
 }

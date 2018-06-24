@@ -14,6 +14,8 @@ if global.gcdLeft == 0 and cdLeft == 0 and global.casting = false
 		inst_HoS.alarm[2] = -1;
 	}
 	
+	thisTar = global.enemyFocus
+	
 	return(true);	
 }
 else

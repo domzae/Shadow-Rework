@@ -17,7 +17,12 @@
         "d75ccdf0-0ed5-4573-9b69-56353fc1258c",
         "620736a3-ce0c-47fa-91bf-894fbdf5004d",
         "2f708d80-6cdc-4992-8919-00a6711da17a",
-        "883853c5-11f5-4acf-b52c-a3d4d267e88b"
+        "883853c5-11f5-4acf-b52c-a3d4d267e88b",
+        "90d06d03-6b06-4871-91e5-3761e972f0e3",
+        "5e2e3a71-3e3b-428a-8255-94b017581f5b",
+        "9b3dbfc8-158d-4208-9f77-9db4c2e7510f",
+        "aca22f45-4b8d-41ab-ba3f-09078ca283de",
+        "9f1299ac-3e7f-451f-af68-4254a1185f80"
     ],
     "filterType": "GMScript",
     "folderName": "Abilities",

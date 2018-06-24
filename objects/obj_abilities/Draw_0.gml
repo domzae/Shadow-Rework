@@ -62,8 +62,8 @@ if dotApplied == true
 //unuseable ovelay
 if isVoid == true and global.sanity == true
 {
-	draw_set_alpha(0.5);
-	draw_set_color(c_red);
+	draw_set_alpha(0.8);
+	draw_set_color(c_black);
 	draw_rectangle(x-56,y+56,x+56,y-56,0);
 	draw_set_alpha(1);
 }

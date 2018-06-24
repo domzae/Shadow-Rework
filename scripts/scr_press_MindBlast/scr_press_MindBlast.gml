@@ -8,4 +8,5 @@ if global.gcdLeft == 0 and (cdLeft == 0 or inst_mindblast.talMindShatterChargesL
 	global.castingTime = 0;
 		
 	alarm[3] = castTime*global.hastemultiplier;
+	thisTar = global.enemyFocus
 }

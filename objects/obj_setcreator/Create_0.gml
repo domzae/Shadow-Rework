@@ -139,13 +139,13 @@ yy2 += verticalspacing;
 yy2 += verticalspacing;
 
 //sear targets
-setsearTargets = instance_create_depth(mCol, y + yy2, 0, obj_settings);
-with (setsearTargets)
+setaoeTargets = instance_create_depth(mCol, y + yy2, 0, obj_settings);
+with (setaoeTargets)
 {
-	userinput = global.searTargets;
+	userinput = global.aoeTargets;
 	maxCharacters = 5;
-	leftText = "Mind Sear targets";
-	rightText = "number of targets hit by a single tick of mind sear";
+	leftText = "Targets";
+	rightText = "(MAX: 10) number of targets hit by aoe abilities, also displays this number of target";
 }
 yy2 += verticalspacing;
 yy2 += verticalspacing;

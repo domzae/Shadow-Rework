@@ -1,0 +1,3 @@
+Resource name collision 'string_thousands' already exists, renamed to 'string_thousands_scripts'
+Converting GML script: ${project_dir}\scripts\string_thousands_scripts\string_thousands_scripts.gml
+Converted description /// @description string_thousands(real)/// @param real

@@ -8,7 +8,7 @@ global.haste = ini_read_real("General","Current Haste",20);
 global.vfhaste = ini_read_real("General","Voidform Haste",15);
 global.madnesshaste = ini_read_real("General","Madness Haste",30);
 
-global.searTargets = ini_read_real("General","Mind Sear Targets",3);
+global.aoeTargets = ini_read_real("General","Mind Sear Targets",3);
 global.CttVrppm = ini_read_real("General","Call to the Void RPPM",2);
 
 
@@ -86,4 +86,26 @@ global.talFocusedInsanityPeak = ini_read_real("Talents","Focused Insanity Peak",
 global.talAllure = ini_read_real("Talents","Allure",false);
 global.talAllureDmg = ini_read_real("Talents","Allure Damage",20);
 global.talAllureDur = ini_read_real("Talents","Allure Duration",20);
+
+//damage
+global.dmgMindBlast = ini_read_real("Damage","Mind Blast Damage",10);
+global.dmgSWDeath = ini_read_real("Damage","SW: Death Damage",15);
+global.dmgVBolt = ini_read_real("Damage","Void Bolt Damage",15);
+global.dmgVEruption = ini_read_real("Damage","Void Eruption Damage",25);
+global.dmgMindFlay = ini_read_real("Damage","Mind Flay Damage",20);
+global.dmgMindSear = ini_read_real("Damage","Mind Sear Damage",8);
+global.dmgSWPain = ini_read_real("Damage","SW: Pain Damage",40);
+global.dmgInitSWPain = ini_read_real("Damage","SW: Pain initial Damage", 5);
+global.dmgVT = ini_read_real("Damage","Vampiric Touch Damage",50);
+global.dmgCttV = ini_read_real("Damage","Call to the Void Damage", 8);
+
+global.dmgDarkVoid = ini_read_real("Damage","Dark Void Damage", 10);
+global.dmgHoS = ini_read_real("Damage","Hymn of Sorrow Damage", 35);
+global.dmgVoidEntropy = ini_read_real("Damage","Void Entropy Damage", 50);
+
+global.dmgMadness = ini_read_real("Damage","Madness Damage", 20);
+global.maxMastery = ini_read_real("Damage","Max Mastery", 8);
+global.baseCrit = ini_read_real("Damage","Crit Chance", 0);
+global.maxHP = ini_read_real("Damage","Max HP", 1000);
+
 ini_close();

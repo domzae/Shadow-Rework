@@ -18,25 +18,27 @@ if global.casting == true
 		global.insanity = global.insanity + insanityGain;
 	}
 	
-	with inst_swpain
+	with obj_enemy
 	{
-		var tempDoT = 0;
-			if dotApplied == false 
+		
+			var tempDoT = 0;
+			if SWPApplied == false 
 			{
-				image_index ++;
-				dotApplied = true;
-				alarm[7] = dotTime*room_speed;
+				SWPApplied = true;
+				alarm[7] = inst_swpain.dotTime*room_speed;
 			}
-			else if alarm[4] > (dotTime*0.3)*room_speed
+			else if alarm[0] > (inst_swpain.dotTime*0.3)*room_speed
 			{
-				tempDoT = dotTime*0.3*room_speed
-				alarm[7] = dotTime*room_speed+tempDoT
+				tempDoT = inst_swpain.dotTime*0.3*room_speed
+				alarm[7] = inst_swpain.dotTime*room_speed+tempDoT
 			}
 			else
 			{
-				tempDoT = alarm[4]
+				tempDoT = alarm[0]
 				alarm[7] = tempDoT
 			}
-			alarm[4] = dotTime*room_speed + tempDoT;
+			alarm[0] = inst_swpain.dotTime*room_speed + tempDoT;
+			alarm[2] = (3*room_speed)/(1+ global.haste/100)
+			scr_damage(global.dmgDarkVoid,0)
 	}
 }

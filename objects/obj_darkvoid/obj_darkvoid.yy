@@ -99,7 +99,7 @@
             "mvc": "1.0",
             "objectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",
             "propertyId": "23cbbcf0-fbe4-4a94-b72f-f9de083403a3",
-            "value": "global.talDarkVoidins*global.searTargets"
+            "value": "global.talDarkVoidins*global.aoeTargets"
         },
         {
             "id": "3f277f20-543a-438c-aae6-fe879e19446c",

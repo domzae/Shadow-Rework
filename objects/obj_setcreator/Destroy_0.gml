@@ -31,9 +31,9 @@ with (setsurrenderExitIns)
 {
 	global.surrenderExitIns = real(userinput);
 }
-with (setsearTargets)
+with (setaoeTargets)
 {
-	global.searTargets = real(userinput);
+	global.aoeTargets = min(10,real(userinput));
 }
 with (setsatiatedModifier)
 {

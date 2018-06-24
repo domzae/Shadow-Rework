@@ -68,4 +68,5 @@ if global.casting == true
 	{
 		image_index ++;
 	}
+	scr_damage(global.dmgMindBlast,thisTar)
 }

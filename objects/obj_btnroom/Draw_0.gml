@@ -14,6 +14,10 @@ else if goto == 3
 {
 	var text = "Talents"
 }
+else if goto == 4
+{
+	var text = "Damage"
+}
 
 draw_self();
 draw_set_font(fnt_settings);

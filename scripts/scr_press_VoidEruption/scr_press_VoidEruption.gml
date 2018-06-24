@@ -24,5 +24,9 @@ if global.sanity == false
 		{
 			global.insanity = global.insanity + insanityGain;
 		}
+		with obj_enemy
+		{
+			scr_damage(global.dmgVEruption,0)
+		}
 	}
 }

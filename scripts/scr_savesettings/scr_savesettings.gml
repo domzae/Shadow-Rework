@@ -15,7 +15,7 @@ ini_write_real("General","Voidform Haste",global.vfhaste);
 ini_write_real("General","Madness Haste",global.madnesshaste);
 ini_write_real("General","Current Haste",global.haste);
 
-ini_write_real("General","Mind Sear Targets",global.searTargets);
+ini_write_real("General","Mind Sear Targets",global.aoeTargets);
 ini_write_real("General","Call to the Void RPPM",global.CttVrppm);
 
 ini_write_real("Madness","Madness Duration",global.madnessTime);
@@ -88,5 +88,26 @@ ini_write_real("Talents","Focused Insanity Peak",global.talFocusedInsanityPeak);
 ini_write_real("Talents","Allure",global.talAllure);
 ini_write_real("Talents","Allure Damage",global.talAllureDmg);
 ini_write_real("Talents","Allure Duration",global.talAllureDur);
+
+//damage
+ini_write_real("Damage","Mind Blast Damage",global.dmgMindBlast);
+ini_write_real("Damage","SW: Death Damage",global.dmgSWDeath);
+ini_write_real("Damage","Void Bolt Damage",global.dmgVBolt);
+ini_write_real("Damage","Void Eruption Damage",global.dmgVEruption);
+ini_write_real("Damage","Mind Flay Damage",global.dmgMindFlay);
+ini_write_real("Damage","Mind Sear Damage",global.dmgMindSear);
+ini_write_real("Damage","SW: Pain Damage",global.dmgSWPain);
+ini_write_real("Damage","SW: Pain initial Damage", global.dmgInitSWPain);
+ini_write_real("Damage","Vampiric Touch Damage",global.dmgVT);
+ini_write_real("Damage","Call to the Void Damage", global.dmgCttV);
+
+ini_write_real("Damage","Dark Void Damage", global.dmgDarkVoid);
+ini_write_real("Damage","Hymn of Sorrow Damage", global.dmgHoS);
+ini_write_real("Damage","Void Entropy Damage", global.dmgVoidEntropy);
+
+ini_write_real("Damage","Madness Damage", global.dmgMadness);
+ini_write_real("Damage","Max Mastery", global.maxMastery);
+ini_write_real("Damage","Crit Chance", global.baseCrit);
+ini_write_real("Damage","Max HP", global.maxHP);
 
 ini_close();

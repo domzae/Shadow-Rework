@@ -1,0 +1,3 @@
+Converting GML script: ${project_dir}\scripts\string_abbrev_real\string_abbrev_real.gml
+Converted description /// @description string_abbrev_real(real,decimals)/// @param real
+/// @param decimals

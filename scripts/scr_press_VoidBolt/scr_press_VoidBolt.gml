@@ -38,6 +38,7 @@ if global.sanity == false
 			global.insanity = global.insanity + insanityGain;
 		}
 		
+		var VBDmg = global.dmgVBolt
 		if global.talVoidlord == true
 		{
 			if obj_voidLord.alarm[8] == -1
@@ -45,6 +46,8 @@ if global.sanity == false
 				obj_voidLord.alarm[8] = room_speed*global.talVoidlordDur;
 			}
 			obj_voidLord.stacks ++;
+			VBDmg *= (1+ obj_voidLord.dmgVoidLord/100)
 		}
+		scr_damage(VBDmg,global.enemyFocus)
 	}
 }

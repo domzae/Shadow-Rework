@@ -1,8 +1,10 @@
 //draw Mind Shatter charges60
 
-draw_set_font(fnt_basic)
+draw_set_font(fnt_tooltip)
+draw_set_halign(fa_left)
 if global.talMindShatter == true
 {
+	depth  = inst_mindblast.depth - 1
 	draw_outline_text(inst_mindblast.x-50, inst_mindblast.y-60,c_black,c_lime,string(inst_mindblast.talMindShatterChargesLeft))
 }
 
