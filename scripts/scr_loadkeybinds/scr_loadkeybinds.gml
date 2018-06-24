@@ -1,8 +1,8 @@
 var file = file_text_open_read(working_directory + "keybinds.kb");
 
-with obj_abilities
+for (var i=0; i<12; i++;)
 {
-	keybind = string_char_at(file_text_read_string(file),1);
+	global.keybindArr[i] = string_char_at(file_text_read_string(file),1);
 	file_text_readln(file);
 }
 

@@ -70,20 +70,20 @@
             "value": "Unusable while Sane"
         },
         {
-            "id": "e85919cb-4604-40cb-bbd9-b64bbbe247b5",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",
-            "propertyId": "44932916-e2d0-4692-a257-98caa4f2577b",
-            "value": "3"
-        },
-        {
             "id": "e277856c-283f-42fe-a3bc-10857c25031c",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",
             "propertyId": "db4ca298-546f-42ec-9374-c58f71a20d3a",
             "value": "True"
+        },
+        {
+            "id": "5ec5d2b2-e6b4-42b4-a266-3a4ad1cb7b44",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",
+            "propertyId": "8c18da02-3e14-4ced-9fa2-da0dc0ecfa03",
+            "value": "4"
         }
     ],
     "parentObjectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",

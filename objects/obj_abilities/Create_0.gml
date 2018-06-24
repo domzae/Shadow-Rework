@@ -4,6 +4,7 @@ dotApplied = false;
 madnessStart = true;
 focus = false;
 setbinding = false;
+keybind = global.keybindArr[keyid]
 
 
 global.lastGCDinstant = false;

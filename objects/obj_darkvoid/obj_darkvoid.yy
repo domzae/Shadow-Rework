@@ -110,12 +110,12 @@
             "value": "1.3"
         },
         {
-            "id": "d0948590-7683-4acc-9b83-e18c6f7e589a",
+            "id": "23d9fbfa-2bf8-474a-a051-c2e700be60d4",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",
-            "propertyId": "44932916-e2d0-4692-a257-98caa4f2577b",
-            "value": "q"
+            "propertyId": "8c18da02-3e14-4ced-9fa2-da0dc0ecfa03",
+            "value": "9"
         }
     ],
     "parentObjectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",

@@ -8,15 +8,20 @@ if !variable_global_exists("drain")
 	global.madness = false;
 	global.surrender = false;
 	
-	//if !file_exists(working_directory + "settings.ini")
-	//{
-		ini_open(working_directory + "default.ini")
-		scr_loadsettings("default.ini");
-	//}
-	//else
-	//{
-	//	scr_setglobvars();
-	//}
+	//set default settings
+	ini_open(working_directory + "default.ini")
+	scr_loadsettings("default.ini");
+	
+	//start initialize keybind array
+	global.keybindArr = array_create(12, noone)
+	if file_exists(working_directory + "keybinds.kb")
+	{
+		scr_loadkeybinds();
+	}
+	else
+	{
+		scr_defaultkeybinds();
+	}
 }
 
 

@@ -303,6 +303,14 @@
             }
         },
         {
+            "Key": "385e54dc-7c1a-4994-a583-b331cb123f2e",
+            "Value": {
+                "id": "d7ed7663-1648-44ee-ad2f-a1d195b15bd3",
+                "resourcePath": "scripts\\scr_defaultkeybinds\\scr_defaultkeybinds.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "38c9a687-6fdd-43ef-9a1b-099593abd873",
             "Value": {
                 "id": "716980e1-9432-4244-bd90-6a79e29a36bf",
@@ -1325,6 +1333,7 @@
         "94b2adb9-e2b2-4b3d-b118-25b9e75b23e3",
         "f6c431ec-ac27-47a5-aae1-5ce14d3cb081",
         "6f3aba4b-84a1-4a5c-874c-ebd05a5dd132",
+        "385e54dc-7c1a-4994-a583-b331cb123f2e",
         "6d5acad1-e37c-4106-ab48-881e02ea53e4",
         "5089896c-bab6-4bfb-bd10-8512d7cf79e2",
         "7db1e07c-7a08-4644-8112-4bb75f381f5a",

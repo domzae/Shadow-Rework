@@ -116,6 +116,14 @@
             "objectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",
             "propertyId": "2e2b0a2b-083f-4605-afe8-983fd5b84149",
             "value": "Channel over 4 seconds, dealing damage up to 3 targets and generating insanity"
+        },
+        {
+            "id": "b1df549c-6c3f-4926-8b83-c9e1058bb81a",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",
+            "propertyId": "8c18da02-3e14-4ced-9fa2-da0dc0ecfa03",
+            "value": "10"
         }
     ],
     "parentObjectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",

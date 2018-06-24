@@ -100,11 +100,11 @@
             "value": "global.cdMindBlast"
         },
         {
-            "id": "651921de-231c-4de9-a2d5-2c317e23975a",
+            "id": "ff34d4dd-0fec-4c54-b0af-3fcf5648e925",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",
-            "propertyId": "44932916-e2d0-4692-a257-98caa4f2577b",
+            "propertyId": "8c18da02-3e14-4ced-9fa2-da0dc0ecfa03",
             "value": "2"
         }
     ],

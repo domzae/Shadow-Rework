@@ -62,14 +62,6 @@
             "value": "Unusable while Sane"
         },
         {
-            "id": "ab3ef54d-e175-490a-9bb9-ec6d7d703108",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",
-            "propertyId": "44932916-e2d0-4692-a257-98caa4f2577b",
-            "value": "#"
-        },
-        {
             "id": "5f55f01f-9b4a-46a4-9b5d-7adb12235663",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -84,6 +76,14 @@
             "objectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",
             "propertyId": "db4ca298-546f-42ec-9374-c58f71a20d3a",
             "value": "True"
+        },
+        {
+            "id": "e4b7c275-8e36-488b-93d9-06befcc0b3c1",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",
+            "propertyId": "8c18da02-3e14-4ced-9fa2-da0dc0ecfa03",
+            "value": "5"
         }
     ],
     "parentObjectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",

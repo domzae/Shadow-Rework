@@ -118,6 +118,14 @@
             "objectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",
             "propertyId": "2e2b0a2b-083f-4605-afe8-983fd5b84149",
             "value": "Apply a DoT for 12s, cooldown reduced by Void Bolt casts"
+        },
+        {
+            "id": "6d1055c0-e4bd-4d89-992e-7287cd8265a3",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",
+            "propertyId": "8c18da02-3e14-4ced-9fa2-da0dc0ecfa03",
+            "value": "11"
         }
     ],
     "parentObjectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",

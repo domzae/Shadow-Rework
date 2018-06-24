@@ -82,12 +82,12 @@
             "value": "2"
         },
         {
-            "id": "58e60e34-7b5b-41c5-b677-9fd64444aa65",
+            "id": "aeff7755-d962-4180-a0bd-d32d60797ab6",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",
-            "propertyId": "44932916-e2d0-4692-a257-98caa4f2577b",
-            "value": "1"
+            "propertyId": "8c18da02-3e14-4ced-9fa2-da0dc0ecfa03",
+            "value": "0"
         }
     ],
     "parentObjectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",

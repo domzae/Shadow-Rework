@@ -203,6 +203,16 @@
             "enumb": 54,
             "eventtype": 6,
             "m_owner": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170"
+        },
+        {
+            "id": "dfb7ebab-5f2f-45a7-ad2d-8f4e3be125b7",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
+            "m_owner": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -349,7 +359,7 @@
             "varType": 2
         },
         {
-            "id": "44932916-e2d0-4692-a257-98caa4f2577b",
+            "id": "8c18da02-3e14-4ced-9fa2-da0dc0ecfa03",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -359,8 +369,8 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "keybind",
-            "varType": 2
+            "varName": "keyid",
+            "varType": 0
         }
     ],
     "solid": false,
