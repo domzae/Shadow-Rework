@@ -1,5 +1,5 @@
 /// @description Pain Discharge pandemic
-if global.talPainDischarge == true
+/*if global.talPainDischarge == true
 {
 	if global.madness == false
 	{

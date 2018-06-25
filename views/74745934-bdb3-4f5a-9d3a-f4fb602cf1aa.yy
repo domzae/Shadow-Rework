@@ -11,7 +11,8 @@
         "da1b9730-ac83-4063-b0ee-eb832c1b2478",
         "415c1442-db07-4594-bb57-6a91dfd9d5d9",
         "944e902e-2b67-4e81-b093-4784c8a04c2f",
-        "c4489978-b141-47b6-a5d6-92fcb506b6a5"
+        "c4489978-b141-47b6-a5d6-92fcb506b6a5",
+        "bd164815-ab5b-4adf-85c1-4c5ef302a708"
     ],
     "filterType": "GMObject",
     "folderName": "Talents",

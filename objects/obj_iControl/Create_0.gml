@@ -13,7 +13,7 @@ if !variable_global_exists("drain")
 	scr_loadsettings("default.ini");
 	
 	//start initialize keybind array
-	global.keybindArr = array_create(12, noone)
+	global.keybindArr = array_create(13, noone)
 	if file_exists(working_directory + "keybinds.kb")
 	{
 		scr_loadkeybinds();

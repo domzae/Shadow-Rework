@@ -26,6 +26,19 @@ with tal3
 {
 	if focus == true
 	{
+		global.talFocustheVoid = true
+	}
+	else
+	{
+		global.talFocustheVoid = false
+	}
+	global.talFocustheVoidCD = real(talSetting.userinput);
+	global.talFocustheVoidDur = real(talSetting2.userinput);
+}
+/*with tal3
+{
+	if focus == true
+	{
 		global.talPainDischarge = true
 	}
 	else
@@ -33,7 +46,7 @@ with tal3
 		global.talPainDischarge = false
 	}
 	global.talPainDischargeins = real(talSetting.userinput);
-}
+}*/
 with tal4
 {
 	if focus == true

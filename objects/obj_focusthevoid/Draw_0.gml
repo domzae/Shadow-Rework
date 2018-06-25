@@ -1,21 +1,33 @@
+/// @description DoT display moved
 draw_self();
 
 draw_set_font(fnt_cd);
 draw_set_halign(fa_middle);
 draw_set_valign(fa_center);
 
-//border
-draw_set_alpha(0.5)
-draw_border(c_gray,-sprite_width/2,-sprite_height/2)
-draw_set_alpha(1)
 
 draw_set_colour(c_yellow);
 draw_set_alpha(($FF000000 >> 24) / $ff);
 
-
-
-
-if cdLeft == 0 or cdLeft == global.gcdLeft
+//draw dot time
+if dotApplied == true
+{
+	draw_set_font(fnt_insanity);
+	draw_set_halign(fa_middle);
+	draw_outline_text(x-8,y,c_black,c_green,string_format(alarm[4]/room_speed,3,1));
+	draw_set_colour(c_lime);
+	draw_rectangle(x-57,y+57,x+57,y-57,1);
+	draw_rectangle(x-56,y+56,x+56,y-56,1);
+	draw_rectangle(x-55,y+55,x+55,y-55,1);
+	draw_set_alpha(1);
+	
+	//duration overlay
+	draw_set_alpha(0.3);
+	draw_set_color(c_green);
+	draw_rectangle(x-56,y+56,x+56,y+56 - (alarm[4]/(global.talFocustheVoidDur*room_speed)*sprite_height),0);
+	draw_set_alpha(1);
+}
+else if cdLeft == 0 or cdLeft == global.gcdLeft
 {
 }
 else if cdLeft < 4
@@ -34,21 +46,17 @@ draw_set_valign(fa_top)
 
 var tooltipText = string(string(abilityName) + "\nCD: " + string(cd/room_speed) + "s" + "\nInsanity gained: " + string(insanityGain) + "\n" + string(mouseoverText));
 
+
+
+
+
+
 //unuseable ovelay
-if global.enemyFocus.currentPerc > 20
+if global.sanity == true or global.madness == true
 {
-	draw_set_alpha(0.8);
-	draw_set_color(c_black);
+	draw_set_alpha(0.5);
+	draw_set_color(c_red);
 	draw_rectangle(x-56,y+56,x+56,y-56,0);
-	draw_set_alpha(1);
-}
-else
-if global.enemyFocus.currentPerc <= 20
-{
-	draw_set_color(c_lime);
-	draw_rectangle(x-57,y+57,x+57,y-57,1);
-	draw_rectangle(x-56,y+56,x+56,y-56,1);
-	draw_rectangle(x-55,y+55,x+55,y-55,1);
 	draw_set_alpha(1);
 }
 
@@ -59,24 +67,6 @@ if focus == true && setbinding == false
 	draw_tooltip_mouse(tooltipText,0);
 	draw_outline_text(20, 1000,c_black,c_white,"Right/Middle-Click to change key binding (numbers/letters only)");
 }
-
-//gcd overlay
-if cdLeft == global.gcdLeft and cdLeft > 0
-{
-	draw_set_alpha(0.3);
-	draw_set_color(c_black);
-	draw_rectangle(x-56,y+56,x+56,y+56-cdLeft*room_speed/global.gcd*112,0);
-	draw_set_alpha(1);
-}
-
-//draw dot time
-if dotApplied == true
-{
-	draw_set_font(fnt_insanity);
-	draw_set_halign(fa_middle);
-	draw_outline_text(x,y-25,c_black,c_green,string_format(alarm[4]/room_speed,3,1));
-}
-
 
 //draw keybind
 draw_set_halign(fa_middle);

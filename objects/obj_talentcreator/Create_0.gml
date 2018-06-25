@@ -21,7 +21,7 @@ with tal1
 {
 	image_index = 1;
 	talentName = "Fortress of the Mind"
-	talentText = "Passively generate insanity up to " + string(global.talFotMins) + " instead of losing it"
+	talentText = "[Passive]\nGenerate insanity up to " + string(global.talFotMins) + " instead of losing it"
 	leftText = "Insanity equillibrium"
 	rightText = "Generate up to this much insanity"
 	focus = global.talFotM
@@ -34,14 +34,30 @@ with tal2
 {
 	image_index = 2;
 	talentName = "Mind Shatter"
-	talentText = "Mind Blast now has " + string(global.talMindShatterCharges) + " charges" 
+	talentText = "[Passive]\nMind Blast now has " + string(global.talMindShatterCharges) + " charges" 
 	leftText = "Max Charges"
-	rightText = "Mind Blast"
+	rightText = ""
 	focus = global.talMindShatter
 	talSet = global.talMindShatterCharges;
 	row = 1
 }
-
+tal3 = instance_create_depth(col3,row1,-7,obj_talent)
+with tal3
+{
+	image_index = 3;
+	talentName = "Focus the Void"
+	talentText = "Focus intently into the void, for "+ string(global.talFocustheVoidDur) +" seconds you will be unable to exit Voidform. Requires Voidform"
+	leftText = "Cooldown"
+	rightText = "seconds"
+	focus = global.talFocustheVoid
+	talSet = global.talFocustheVoidCD;
+	row = 1
+	//second setting
+	leftText2 = "Duration"
+	rightText2 = "seconds"
+	talSet2 = global.talFocustheVoidDur;
+}
+/* OLD
 tal3 = instance_create_depth(col3,row1,-7,obj_talent)
 with tal3
 {
@@ -53,7 +69,7 @@ with tal3
 	focus = global.talPainDischarge
 	talSet = global.talPainDischargeins;
 	row = 1
-}
+}*/
 /////////
 //ROW 2//
 /////////
@@ -62,7 +78,7 @@ with tal4
 {
 	image_index = 4;
 	talentName = "Blackout"
-	talentText = "Mind Blast increases the remaining time on Shadow Word: Pain and Vampiric Touch by " + string(global.talBlackoutDotInc) + " seconds"
+	talentText = "[Passive]\nMind Blast increases the remaining time on Shadow Word: Pain and Vampiric Touch by " + string(global.talBlackoutDotInc) + " seconds"
 	leftText = "Dot duration increase"
 	rightText = "seconds"
 	focus = global.talBlackout
@@ -75,7 +91,7 @@ with tal5
 {
 	image_index = 5;
 	talentName = "Misery"
-	talentText = "Vampiric Touch also applies Shadow Word: Pain"
+	talentText = "[Passive]\nVampiric Touch also applies Shadow Word: Pain"
 	leftText = ""
 	rightText = ""
 	focus = global.talMisery
@@ -88,7 +104,7 @@ with tal6
 {
 	image_index = 6;
 	talentName = "Dark Void"
-	talentText = "Unleash an explosion of dark energy, applying Shadow Word: Pain to each target hit. Generates " + string(global.talDarkVoidins) + " insanity per target hit. (number of targets set by Mind Sear settings)"
+	talentText = "Unleash an explosion of dark energy, applying Shadow Word: Pain to each target hit. Generates " + string(global.talDarkVoidins) + " insanity per target hit."
 	leftText = "Insanity generated"
 	rightText = "per target"
 	focus = global.talDarkVoid
@@ -107,7 +123,7 @@ with tal10
 {
 	image_index = 10;
 	talentName = "Voidlord"
-	talentText = "Void Bolt increases the damage of Void Bolt by x% for y"+/* string(global.talVoidlordDur) +*/" seconds. Additional stacks do not refresh the duration."
+	talentText = "[Passive]\nVoid Bolt increases the damage of Void Bolt by x% for y"+/* string(global.talVoidlordDur) +*/" seconds. Additional stacks do not refresh the duration."
 	leftText = "Damage increase"
 	rightText = "per stack"
 	focus = global.talVoidlord
@@ -124,7 +140,7 @@ with tal11
 {
 	image_index = 11;
 	talentName = "Focused Insanity"
-	talentText = "While in Voidform your damage is increased up to x% based on how close to y insanity you are."
+	talentText = "[Passive]\nWhile in Voidform your damage is increased up to x% based on how close to y insanity you are."
 	leftText = "Max damage increase"
 	rightText = "percent"
 	focus = global.talFocusedInsanity
@@ -140,7 +156,7 @@ with tal12
 {
 	image_index = 12;
 	talentName = "Allure to the Void"
-	talentText = "Your Madness has x% increased damage, reduced for each second spent in Voidform. This bonus is replenished while sane."
+	talentText = "[Passive]\nYour Madness has x% increased damage, reduced for each second spent in Voidform. This bonus is replenished while sane."
 	leftText = "Max damage increase"
 	rightText = "percent"
 	focus = global.talAllure
@@ -159,7 +175,7 @@ with tal7
 {
 	image_index = 7;
 	talentName = "Attuned to the Void"
-	talentText = "For every " + string(global.talAttVInterval) + " second spent in Voidform, reduce the remaining cooldown on Surrender to Madness by " + string(global.talAttVCDR) + " seconds"
+	talentText = "[Passive]\nFor every " + string(global.talAttVInterval) + " second spent in Voidform, reduce the remaining cooldown on Surrender to Madness by " + string(global.talAttVCDR) + " seconds"
 	leftText = "Cooldown reduction"
 	rightText = "per interval"
 	focus = global.talAttV

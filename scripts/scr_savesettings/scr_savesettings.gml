@@ -55,8 +55,11 @@ ini_write_real("Talents","FotM Insanity Eq",global.talFotMins);
 ini_write_real("Talents","Mind Shatter",global.talMindShatter);
 ini_write_real("Talents","Mind Shatter Charges",global.talMindShatterCharges);
 
-ini_write_real("Talents","Pain Discharge",global.talPainDischarge);
-ini_write_real("Talents","Pain Discharge Insanity",global.talPainDischargeins);
+ini_write_real("Talents","Focus the Void",global.talFocustheVoid);
+ini_write_real("Talents","Focus the Void CD",global.talFocustheVoidCD);
+ini_write_real("Talents","Focus the Void Duration",global.talFocustheVoidDur);
+//ini_write_real("Talents","Pain Discharge",global.talPainDischarge);
+//ini_write_real("Talents","Pain Discharge Insanity",global.talPainDischargeins);
 
 ini_write_real("Talents","Blackout",global.talBlackout);
 ini_write_real("Talents","Blackout DoT increase",global.talBlackoutDotInc);

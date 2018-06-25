@@ -34,13 +34,7 @@ draw_set_valign(fa_top)
 
 var tooltipText = string(string(abilityName) + "\nCD: " + string(cd/room_speed) + "s" + "\nInsanity gained: " + string(insanityGain) + "\n" + string(mouseoverText));
 
-//mouseover 
-if focus == true && setbinding == false
-{
-	draw_sprite(spr_abilityover,0,x,y);
-	draw_tooltip_mouse(tooltipText,0);
-	draw_outline_text(20, 1000,c_black,c_white,"Right/Middle-Click to change key binding (numbers/letters only)");
-}
+
 
 //gcd overlay
 if cdLeft == global.gcdLeft and cdLeft > 0
@@ -66,6 +60,14 @@ if isVoid == true and global.sanity == true
 	draw_set_color(c_black);
 	draw_rectangle(x-56,y+56,x+56,y-56,0);
 	draw_set_alpha(1);
+}
+
+//mouseover 
+if focus == true && setbinding == false
+{
+	draw_sprite(spr_abilityover,0,x,y);
+	draw_tooltip_mouse(tooltipText,0);
+	draw_outline_text(20, 1000,c_black,c_white,"Right/Middle-Click to change key binding (numbers/letters only)");
 }
 
 //draw keybind

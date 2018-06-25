@@ -12,4 +12,5 @@ global.keybindArr[8] = "e"
 global.keybindArr[9] = "q"
 global.keybindArr[10] = "w"
 global.keybindArr[11] = "r"
+global.keybindArr[12] = "t"
 
