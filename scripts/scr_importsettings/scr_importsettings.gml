@@ -45,7 +45,7 @@ global.durVT = ini_read_real("Other","Vampiric Touch Duration",22);
 
 //talents
 global.talFotM = ini_read_real("Talents","Fortress of the Mind",false);
-global.talFotMins = ini_read_real("Talents","FotM Insanity Eq",25);
+global.talFotMins = ini_read_real("Talents","FotM Insanity Eq",33);
 
 global.talMindShatter = ini_read_real("Talents","Mind Shatter",false);
 global.talMindShatterCharges = ini_read_real("Talents","Mind Shatter Charges",2);
@@ -57,7 +57,7 @@ global.talFocustheVoidDur = ini_read_real("Talents","Focus the Void Duration",4)
 //global.talPainDischargeins = ini_read_real("Talents","Pain Discharge Insanity",10);
 
 global.talBlackout = ini_read_real("Talents","Blackout",false);
-global.talBlackoutDotInc = ini_read_real("Talents","Blackout DoT increase",3);
+global.talBlackoutDotInc = ini_read_real("Talents","Blackout DoT increase",2.5);
 
 global.talMisery = ini_read_real("Talents","Misery",false);
 
@@ -79,7 +79,7 @@ global.talVEntropyCD = ini_read_real("Talents","Void Entropy CD",18);
 global.talVEntropyCDR = ini_read_real("Talents","Void Entropy CDR",2);
 
 global.talVoidlord = ini_read_real("Talents","Voidlord",false);
-global.talVoidlordDmg = ini_read_real("Talents","Voidlord Damage",5);
+global.talVoidlordDmg = ini_read_real("Talents","Voidlord Damage",12);
 global.talVoidlordDur = ini_read_real("Talents","Voidlord Duration",6);
 
 global.talFocusedInsanity = ini_read_real("Talents","Focused Insanity",false);
@@ -91,24 +91,24 @@ global.talAllureDmg = ini_read_real("Talents","Allure Damage",20);
 global.talAllureDur = ini_read_real("Talents","Allure Duration",20);
 
 //damage
-global.dmgMindBlast = ini_read_real("Damage","Mind Blast Damage",10);
-global.dmgSWDeath = ini_read_real("Damage","SW: Death Damage",15);
-global.dmgVBolt = ini_read_real("Damage","Void Bolt Damage",15);
-global.dmgVEruption = ini_read_real("Damage","Void Eruption Damage",25);
-global.dmgMindFlay = ini_read_real("Damage","Mind Flay Damage",20);
-global.dmgMindSear = ini_read_real("Damage","Mind Sear Damage",8);
-global.dmgSWPain = ini_read_real("Damage","SW: Pain Damage",40);
-global.dmgInitSWPain = ini_read_real("Damage","SW: Pain initial Damage", 5);
-global.dmgVT = ini_read_real("Damage","Vampiric Touch Damage",50);
-global.dmgCttV = ini_read_real("Damage","Call to the Void Damage", 8);
+global.dmgMindBlast = ini_read_real("Damage","Mind Blast Damage",8000);
+global.dmgSWDeath = ini_read_real("Damage","SW: Death Damage",13500);
+global.dmgVBolt = ini_read_real("Damage","Void Bolt Damage",6000);
+global.dmgVEruption = ini_read_real("Damage","Void Eruption Damage",12000);
+global.dmgMindFlay = ini_read_real("Damage","Mind Flay Damage",10000);
+global.dmgMindSear = ini_read_real("Damage","Mind Sear Damage",4000);
+global.dmgSWPain = ini_read_real("Damage","SW: Pain Damage",9000);
+global.dmgInitSWPain = ini_read_real("Damage","SW: Pain initial Damage", 1000);
+global.dmgVT = ini_read_real("Damage","Vampiric Touch Damage",15000);
+global.dmgCttV = ini_read_real("Damage","Call to the Void Damage", 5000);
 
-global.dmgDarkVoid = ini_read_real("Damage","Dark Void Damage", 10);
-global.dmgHoS = ini_read_real("Damage","Hymn of Sorrow Damage", 35);
-global.dmgVoidEntropy = ini_read_real("Damage","Void Entropy Damage", 50);
+global.dmgDarkVoid = ini_read_real("Damage","Dark Void Damage", 6000);
+global.dmgHoS = ini_read_real("Damage","Hymn of Sorrow Damage", 20000);
+global.dmgVoidEntropy = ini_read_real("Damage","Void Entropy Damage", 10000);
 
 global.dmgMadness = ini_read_real("Damage","Madness Damage", 20);
 global.maxMastery = ini_read_real("Damage","Max Mastery", 8);
-global.baseCrit = ini_read_real("Damage","Crit Chance", 0);
-global.maxHP = ini_read_real("Damage","Max HP", 1000);
+global.baseCrit = ini_read_real("Damage","Crit Chance", 30);
+global.maxHP = ini_read_real("Damage","Max HP", 10000000);
 
 ini_close();

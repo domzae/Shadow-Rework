@@ -20,7 +20,7 @@ else if global.talFocusedInsanity == true
 }
 
 //crit multiplier
-if random(100-min(100,global.baseCrit)) == 0
+if irandom(100/min(100,global.baseCrit)-1) == 0
 {
 	damage *= 2
 }
