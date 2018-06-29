@@ -80,6 +80,8 @@ ini_write_real("Talents","Hymn of Sorrow Cooldown",global.talHoSCD);
 ini_write_real("Talents","Void Entropy",global.talVEntropy);
 ini_write_real("Talents","Void Entropy CD",global.talVEntropyCD);
 ini_write_real("Talents","Void Entropy CDR",global.talVEntropyCDR);
+ini_write_real("Talents","Void Entropy Insanity",global.talVEntropyins);
+ini_write_real("Talents","Void Entropy Duration",global.talVEntropyDur);
 
 ini_write_real("Talents","Voidlord",global.talVoidlord);
 ini_write_real("Talents","Voidlord Damage",global.talVoidlordDmg);
@@ -110,6 +112,7 @@ ini_write_real("Damage","Hymn of Sorrow Damage", global.dmgHoS);
 ini_write_real("Damage","Void Entropy Damage", global.dmgVoidEntropy);
 
 ini_write_real("Damage","Madness Damage", global.dmgMadness);
+ini_write_real("Damage","Madness VB Damage", global.dmgVBMadness);
 ini_write_real("Damage","Max Mastery", global.maxMastery);
 ini_write_real("Damage","Crit Chance", global.baseCrit);
 ini_write_real("Damage","Max HP", global.maxHP);

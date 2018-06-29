@@ -27,6 +27,10 @@ with (setsurrenderTime)
 {
 	global.surrenderTime = real(userinput);
 }
+with (setcdS2M)
+{
+	global.cdS2M = real(userinput);
+}
 with (setsurrenderExitIns)
 {
 	global.surrenderExitIns = real(userinput);
@@ -43,87 +47,30 @@ with (setsatiatedTime)
 {
 	global.satiatedTime = real(userinput);
 }
-with (setcdSharedVoid)
-{
-	global.cdSharedVoid = real(userinput);
-}
-with (setCttVrppm)
-{
-	global.CttVrppm = real(userinput);
-}
+
 with(setspellQueue)
 {
 	global.spellQueue = real(userinput);
 }
 
-//CDS
-
-with (setcdMindBlast)
+//other
+with(setdmgMadness)
 {
-	global.cdMindBlast = real(userinput);
+	global.dmgMadness = real(userinput);
 }
-with (setcdSWDeath)
+with(setdmgVBMadness)
 {
-	global.cdSWDeath = real(userinput);
+	global.dmgVBMadness = real(userinput);
 }
-with (setcdVBolt)
+with(setmaxMastery)
 {
-	global.cdVBolt = real(userinput);
+	global.maxMastery = real(userinput);
 }
-with (setcdVEruption)
+with(setbaseCrit)
 {
-	global.cdVEruption = real(userinput);
+	global.baseCrit = real(userinput);
 }
-with (setcdS2M)
+with(setmaxHP)
 {
-	global.cdS2M = real(userinput);
-}
-
-//DoTs
-with (setdurSWPain)
-{
-	global.durSWPain = real(userinput);
-}
-with (setdurVT)
-{
-	global.durVT = real(userinput);
-}
-
-//Insanity gains
-with (setinsgainMindBlast)
-{
-	global.insgainMindBlast = real(userinput);
-}
-with (setinsgainSWDeath)
-{
-	global.insgainSWDeath = real(userinput);
-}
-with (setinsgainVBolt)
-{
-	global.insgainVBolt = real(userinput);
-}
-
-with (setinsgainVEruption)
-{
-	global.insgainVEruption = real(userinput);
-}
-with (setinsgainMindFlay)
-{
-	global.insgainMindFlay = real(userinput);
-}
-with (setinsgainMindSear)
-{
-	global.insgainMindSear = real(userinput);
-}
-with (setinsgainSWPain)
-{
-	global.insgainSWPain = real(userinput);
-}
-with (setinsgainVT)
-{
-	global.insgainVT = real(userinput);
-}
-with(setinsgainCttV)
-{
-	global.insgainCttV = real(userinput);
+	global.maxHP = real(userinput);
 }

@@ -193,18 +193,14 @@ with tal8
 	image_index = 8;
 	talentName = "Hymn of Sorrow"
 	talentText = "Channels over 4 seconds, generates " + string(global.talHoSins) + " insanity"
-	leftText = "Insanity generated"
-	rightText = "over its duration"
+	//leftText = "Insanity generated"
+	//rightText = "over its duration"
 	focus = global.talHoS
-	talSet = global.talHoSins;
+	//talSet = global.talHoSins;
 	row = 3
-	//second setting
-	/*leftText2 = "Pause passive drain"
-	rightText2 = "1 = pause\n0 = continue"
-	talSet2 = real(global.talHoSpause);*/
-	leftText2 = "Cooldown"
-	rightText2 = "seconds"
-	talSet2 = real(global.talHoSCD);
+	leftText = "Pause passive drain"
+	rightText = "1 = pause\n0 = continue"
+	talSet = real(global.talHoSpause);
 }
 
 tal9 = instance_create_depth(col3,row4,-1,obj_talent)
@@ -213,13 +209,13 @@ with tal9
 	image_index = 9;
 	talentName = "Void Entropy"
 	talentText = "Applies a DoT for 12s, Void Bolt reduces the remaining cooldown by " + string(global.talVEntropyCDR) + " seconds"
-	leftText = "Cooldown"
-	rightText = "seconds"
+	//leftText = "Cooldown"
+	//rightText = "seconds"
 	focus = global.talVEntropy
-	talSet = global.talVEntropyCD;
+	//talSet = global.talVEntropyCD;
 	row = 3
 	//second setting
-	leftText2 = "CDR per bolt"
-	rightText2 = "seconds"
-	talSet2 = global.talVEntropyCDR
+	leftText = "CDR per bolt"
+	rightText = "seconds"
+	talSet = global.talVEntropyCDR
 }

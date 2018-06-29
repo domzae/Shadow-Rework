@@ -105,8 +105,7 @@ with tal8
 	{
 		global.talHoS = false
 	}
-	global.talHoSins = real(talSetting.userinput);
-	global.talHoSCD = real(talSetting2.userinput);
+	global.talHoSpause = real(talSetting.userinput);
 }
 with tal9
 {
@@ -118,8 +117,8 @@ with tal9
 	{
 		global.talVEntropy = false
 	}
-	global.talVEntropyCD = real(talSetting.userinput);
-	global.talVEntropyCDR = real(talSetting2.userinput);
+	//global.talVEntropyCD = real(talSetting.userinput);
+	global.talVEntropyCDR = real(talSetting.userinput);
 }
 with tal10
 {

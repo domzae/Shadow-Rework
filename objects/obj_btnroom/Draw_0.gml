@@ -16,11 +16,12 @@ else if goto == 3
 }
 else if goto == 4
 {
-	var text = "Damage"
+	var text = "Abilities"
 }
 
 draw_self();
 draw_set_font(fnt_settings);
 draw_set_halign(fa_middle);
+draw_set_valign(fa_center)
 
-draw_outline_text(x,y-15,c_black,c_white,text);
+draw_outline_text(x,y,c_black,c_white,text);

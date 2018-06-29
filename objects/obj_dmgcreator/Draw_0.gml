@@ -1,0 +1,6 @@
+draw_set_halign(fa_middle)
+draw_set_valign(fa_center)
+draw_set_font(fnt_subheader)
+draw_outline_text(x+25, 28, c_white,c_purple,"Damage")
+draw_outline_text(mCol+80, 28, c_white,c_purple,"Insanity")
+draw_outline_text(rCol+80, 28, c_white,c_purple,"CD")

@@ -48,6 +48,10 @@ if global.sanity == false
 			obj_voidLord.stacks ++;
 			VBDmg *= (1+ obj_voidLord.dmgVoidLord/100)
 		}
+		if global.madness == true
+		{
+			VBDmg *= (1+(global.dmgVBMadness - global.dmgMadness)/100)
+		}
 		scr_damage(VBDmg,global.enemyFocus)
 	}
 }

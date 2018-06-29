@@ -109,7 +109,7 @@
             "mvc": "1.0",
             "objectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",
             "propertyId": "57dddac2-0bd3-422c-9773-dc9eb49f08ff",
-            "value": "12"
+            "value": "global.talVEntropyDur"
         },
         {
             "id": "5b844f43-96c0-452d-98e9-ced2d60331be",
@@ -126,6 +126,14 @@
             "objectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",
             "propertyId": "8c18da02-3e14-4ced-9fa2-da0dc0ecfa03",
             "value": "11"
+        },
+        {
+            "id": "a99f1ad2-5a93-4495-b826-107bf61e6aea",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",
+            "propertyId": "23cbbcf0-fbe4-4a94-b72f-f9de083403a3",
+            "value": "global.talVEntropyins"
         }
     ],
     "parentObjectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",
