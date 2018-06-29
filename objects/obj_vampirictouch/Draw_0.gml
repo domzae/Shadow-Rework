@@ -11,6 +11,8 @@ if global.enemyFocus.VTApplied == true
 	draw_set_font(fnt_insanity);
 	draw_set_halign(fa_middle);
 	draw_outline_text(x,y-25,c_black,c_green,string_format(global.enemyFocus.alarm[1]/room_speed,3,1));
+	draw_set_colour(c_lime);
+	draw_rectangle(x-57,y+57,x+57,y-57,1);
 }
 else
 {

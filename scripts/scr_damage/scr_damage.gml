@@ -20,11 +20,13 @@ else if global.talFocusedInsanity == true
 }
 
 //crit multiplier
-if irandom(100/min(100,global.baseCrit)-1) == 0
+if global.baseCrit > 0
 {
-	damage *= 2
+	if irandom(100/clamp(global.baseCrit,1,100)-1) == 0
+	{
+		damage *= 2
+	}
 }
-
 
 
 if focTar == 0 //aoe

@@ -45,13 +45,14 @@ if cdLeft == global.gcdLeft and cdLeft > 0
 	draw_rectangle(x-56,y+56,x+56,y+56-cdLeft*room_speed/global.gcd*112,0);
 	draw_set_alpha(1);
 }
-
 //draw dot time
-if dotApplied == true
+if global.enemyFocus.VEApplied == true
 {
 	draw_set_font(fnt_insanity);
 	draw_set_halign(fa_middle);
-	draw_outline_text(x+sprite_width,y-25,c_black,c_green,string_format(alarm[4]/room_speed,3,1));
+	draw_outline_text(x+sprite_width,y-25,c_black,c_green,string_format(global.enemyFocus.alarm[4]/room_speed,3,1));
+	draw_set_colour(c_lime);
+	draw_rectangle(x-57,y+57,x+57,y-57,1);
 }
 
 //unuseable ovelay
