@@ -216,7 +216,17 @@ with (setdurVT)
 	leftText = "Vampiric Touch duration";
 	rightText = "Seconds";
 }
-
+yy2 += verticalspacing;
+yy2 += verticalspacing;
+//spell queue
+setspellQueue = instance_create_depth(mCol, y + yy2, 0, obj_settings);
+with (setspellQueue)
+{
+	userinput = global.spellQueue;
+	maxCharacters = 5;
+	leftText = "Spell Queue";
+	rightText = "Seconds - amount of time before the CD/GCD an ability will be queued to fire";
+}
 
 
 ////////////////

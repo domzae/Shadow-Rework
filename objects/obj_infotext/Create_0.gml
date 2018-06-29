@@ -6,6 +6,6 @@ text2 = "\n\nExpected WoW mechanics exist, such as haste reducing cast/channel t
 
 text3 = "Not yet implemented:\n    -Damage meter\n    -Damage breakdown per spell";
 
-text4 = "\n\nProbably never implemented:\n    -Pandemic when clipping a channel with itself\n    -Spell queueing (Lag tolerance)"
+text4 = "\n\nProbably never implemented:\n    -Pandemic when clipping a channel with itself"
 
 text5 = "\nLastly if you have any feedback or find bugs with the GUI you can find me via Discord: Domzae#8909"

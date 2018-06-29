@@ -47,6 +47,7 @@ ini_write_real("Insanity","Call to the Void Insanity",global.insgainCttV);
 ini_write_real("Other","Multiple Talents per Row",global.multiTal);
 ini_write_real("Other","Shadow Word: Pain Duration",global.durSWPain);
 ini_write_real("Other","Vampiric Touch Duration",global.durVT);
+ini_write_real("Other","Spell Queue",global.spellQueue);
 
 //talents
 ini_write_real("Talents","Fortress of the Mind",global.talFotM);

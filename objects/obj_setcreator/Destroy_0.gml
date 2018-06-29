@@ -51,6 +51,10 @@ with (setCttVrppm)
 {
 	global.CttVrppm = real(userinput);
 }
+with(setspellQueue)
+{
+	global.spellQueue = real(userinput);
+}
 
 //CDS
 
