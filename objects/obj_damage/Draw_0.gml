@@ -100,7 +100,7 @@ for (var i=0; i<14; i++)
 		var avg = string_thousands_scripts(damageGrid[# 5,i])
 		var mi = string_thousands_scripts(damageGrid[# 6,i])
 		var ma = string_thousands_scripts(damageGrid[# 7,i])
-		var dpe = string_thousands_scripts(damageGrid[# 5,i]/real(casts))
+		var dpe = string_thousands_scripts(shortDmg/real(casts))
 		draw_tooltip_mouse(name+"\nCasts: "+casts+"\nHits: "+hits+"\nCrits: "+crits+"("+critper+"%)\nAvg: "+avg+"\nMin: "+mi+"\nMax: "+ma+"\nDPE: "+dpe,0)
 	}
 }
