@@ -8,12 +8,22 @@ if global.dmgON == true
 	//madness multiplier
 	if global.madness == true
 	{
-		damage *= (1+ (global.dmgMadness/100))
+		var maddmg = 0;
+		
+		if object_index == obj_voidbolt.object_index
+		{
+			maddmg = (1+ (global.dmgVBMadness/100))
+		}
+		else
+		{
+			maddmg = (1+ (global.dmgMadness/100))
+		}
 		//Allure multiplier
 		if global.talAllure == true
 		{
-			damage *= (1+ (obj_allure.dmgAllure/100))
+			maddmg += (obj_allure.dmgAllure/100)
 		}
+		damage *= maddmg
 	}
 	//Focused Insanity multiplier
 	else if global.talFocusedInsanity == true

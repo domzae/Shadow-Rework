@@ -1,8 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-// Inherit the parent event
-event_inherited();
 
 //set cd to shared cd for eruption and bolt
 if global.madness == true //loops through while in madness
@@ -39,3 +37,5 @@ else
 		madnessStart = true;
 	}
 }
+// Inherit the parent event
+event_inherited();

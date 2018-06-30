@@ -61,7 +61,7 @@ draw_set_font(fnt_insanity);
 draw_set_halign(fa_middle);
 
 //draw sanity | voidform | madness text
-if global.sanity = true
+/*if global.sanity = true
 {
 	draw_outline_text(x,y,c_black,c_white,"Sane");
 }

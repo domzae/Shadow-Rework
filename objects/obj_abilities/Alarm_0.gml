@@ -2,6 +2,6 @@
 //saturate image
 if cd != 0
 {
-	image_index --;
+	image_index = 0;
 }
 

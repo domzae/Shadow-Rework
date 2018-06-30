@@ -16,7 +16,8 @@
         "2d2b3cd2-948c-4c00-bbe4-d7809bf9e04f",
         "3b852831-3b02-4fc2-a643-5cbc739eea18",
         "a2bacff6-167f-4acf-b831-e9963dbae8cc",
-        "c051876c-e0b7-4027-a147-99807120a877"
+        "c051876c-e0b7-4027-a147-99807120a877",
+        "041f3c8b-d197-4e54-a51e-097649b9ecba"
     ],
     "filterType": "GMSprite",
     "folderName": "sprAbilities",

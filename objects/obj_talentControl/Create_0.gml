@@ -10,7 +10,7 @@ if global.talAllure == true
 {
 	if global.talFocusedInsanity == true
 	{
-		instance_create_depth(x,y+96,depth-1,obj_allure)
+		instance_create_depth(x-96,y,depth-1,obj_allure)
 	}
 	else
 	{

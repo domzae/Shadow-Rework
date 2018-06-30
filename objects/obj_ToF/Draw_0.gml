@@ -8,7 +8,7 @@ if global.dmgON == true
 	//border
 	draw_border(c_green,0,0)
 	
-	draw_outline_text(x-20, y+sprite_height/2,c_black,c_green, string_format(currentToF,4,1) + "%");
+	draw_outline_text(x+70, y+sprite_height/2,c_black,c_green, string_format(currentToF,4,1) + "%");
 	
 	if focus == true
 	{

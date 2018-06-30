@@ -50,7 +50,7 @@ if global.sanity == false
 		}
 		if global.madness == true
 		{
-			VBDmg *= (1+(global.dmgVBMadness - global.dmgMadness)/100)
+			//VBDmg *= (1+(global.dmgVBMadness - global.dmgMadness)/100)
 		}
 		scr_damage(VBDmg,global.enemyFocus)
 	}
