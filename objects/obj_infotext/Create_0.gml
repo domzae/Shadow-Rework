@@ -4,7 +4,7 @@ text1 = "\n\n\n\nThe general goals are:\n    -Maintain SW:P and VT\n    -Stay be
 
 text2 = "\n\nExpected WoW mechanics exist, such as haste reducing cast/channel times, as well as the global cooldown (up to a cap of 0.5s). Anything that is not related to insanity or cooldowns (such as damage numbers or critical strikes), is not included here,";
 
-text3 = "Not yet implemented:\n    -Damage meter\n    -Damage breakdown per spell";
+text3 = "Not yet implemented:\n    -More options on damage meter";
 
 text4 = "\n\nProbably never implemented:\n    -Pandemic when clipping a channel with itself"
 

@@ -2,32 +2,37 @@
 
 var focTar = argument[1]
 
-var tickTime = (3*room_speed)/(1+ global.haste/100)
-var ticks = (obj_swpain.dotTime*room_speed)/tickTime
+var tickTime = (3*room_speed)/(1+ global.haste/100)			//3s before haste
+var ticks = obj_vampirictouch.dotTime/3 //number of ticks in duration
 
 var ticksR = floor(ticks) //ticks rounded
 var ticksL = frac(ticks) //ticks leftover
 
-var tickDmg = argument[0]/ticksR
+var tickDmg = argument[0]/ticksR //damage / number of ticks
 
-if alarm[1] > tickTime
+
+if alarm[1] >= tickTime
 {
-	scr_damage(tickDmg,focTar)
 	alarm[3] = tickTime
 }
 else if alarm[1] <= 0
 {
-	if ticksL == 0
+	/*if ticksL == 0
 	{
-		scr_damage(tickDmg,focTar)
 	}
 	else
 	{
-		scr_damage(tickDmg*ticksL,focTar)
+		tickDmg *= ticksL
+	}*/
+	if thisVTDur > 0
+	{
+		tickDmg *= (thisVTDur/tickTime)
+		thisVTDur = 0
 	}
 }
 else
 {
-	scr_damage(tickDmg,focTar)
+	thisVTDur = alarm[1]
 	alarm[3] = alarm[1]
 }
+scr_damage(tickDmg,focTar)

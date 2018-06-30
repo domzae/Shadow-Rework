@@ -16,6 +16,7 @@ if global.casting == true
 	if thisTar.VTApplied == false 
 	{
 		thisTar.VTApplied = true;
+		thisTar.alarm[3] = (3*room_speed)/(1+ global.haste/100)
 	}
 	else if thisTar.alarm[1] > (dotTime*0.3)*room_speed
 	{
@@ -23,10 +24,10 @@ if global.casting == true
 	}
 	else
 	{
-		tempDoT = thisTar.alarm[4]
+		tempDoT = thisTar.alarm[1]
 	}
 	thisTar.alarm[1] = dotTime*room_speed + tempDoT;
-	thisTar.alarm[3] = (3*room_speed)/(1+ global.haste/100)
+	
 	
 	if global.talMisery == true
 	{
@@ -37,6 +38,7 @@ if global.casting == true
 			{
 				other.thisTar.SWPApplied = true;
 				other.thisTar.alarm[7] = dotTime*room_speed;
+				other.thisTar.alarm[2] = (3*room_speed)/(1+ global.haste/100)
 			}
 			else if other.thisTar.alarm[0] > (dotTime*0.3)*room_speed
 			{

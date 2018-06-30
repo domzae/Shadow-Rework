@@ -5,7 +5,8 @@
     "name": "1b077363-973d-4c54-b8da-2c4193484913",
     "children": [
         "d2eae79c-fd62-454e-bb7b-c08073c5c7b8",
-        "e4f50afd-e046-4bae-a217-fa5ac270c278"
+        "e4f50afd-e046-4bae-a217-fa5ac270c278",
+        "6a43bcd0-04e2-4cae-8495-27e3076253c4"
     ],
     "filterType": "GMExtension",
     "folderName": "extensions",

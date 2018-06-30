@@ -1,0 +1,8 @@
+Converting GML script: ${project_dir}\scripts\scr_string_pad_right\scr_string_pad_right.gml
+Converted description /// @description scr_string_pad_right(string, length, subject)/// @param string
+/// @param  length
+/// @param  subject
+
+Converting GML script: ${project_dir}\scripts\scr_string_trim_right\scr_string_trim_right.gml
+Converted description /// @description scr_string_trim_right(string, characterSet)/// @param string
+/// @param  characterSet

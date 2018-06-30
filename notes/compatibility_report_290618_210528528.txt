@@ -1,0 +1,15 @@
+Converting GML script: ${project_dir}\scripts\scr_array_print\scr_array_print.gml
+ERROR: D:\GMS Projects\ShadowReworkGUI\scripts\scr_array_print\scr_array_print.gml - 35: number of arguments expected 0 got 2
+ERROR: D:\GMS Projects\ShadowReworkGUI\scripts\scr_array_print\scr_array_print.gml - 35: unexpected syntax error
+ERROR: D:\GMS Projects\ShadowReworkGUI\scripts\scr_array_print\scr_array_print.gml - 39: unexpected syntax error
+ERROR: D:\GMS Projects\ShadowReworkGUI\scripts\scr_array_print\scr_array_print.gml - 43: unexpected syntax error
+ERROR: D:\GMS Projects\ShadowReworkGUI\scripts\scr_array_print\scr_array_print.gml - 47: unexpected syntax error
+Too many errors - GML not processed : ${project_dir}\scripts\scr_array_print\scr_array_print.gml
+
+Converting GML script: ${project_dir}\scripts\scr_ds_list_print\scr_ds_list_print.gml
+Converted description /// @description scr_ds_list_print(DSListIndex, filename)/// @param DSListIndex
+/// @param  filename
+
+Converting GML script: ${project_dir}\scripts\scr_ds_map_print\scr_ds_map_print.gml
+Converted description /// @description scr_ds_map_print(dsMap, filename)/// @param dsMap
+/// @param  filename

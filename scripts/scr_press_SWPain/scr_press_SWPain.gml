@@ -26,6 +26,7 @@ if scr_ability_check()
 	{
 		focTar.SWPApplied = true;
 		focTar.alarm[7] = dotTime*room_speed;
+		focTar.alarm[2] = (3*room_speed)/(1+ global.haste/100)
 	}
 	else if focTar.alarm[0] > (dotTime*0.3)*room_speed
 	{
@@ -38,7 +39,6 @@ if scr_ability_check()
 		focTar.alarm[7] = tempDoT
 	}
 	focTar.alarm[0] = dotTime*room_speed + tempDoT;
-	focTar.alarm[2] = (3*room_speed)/(1+ global.haste/100)
 
 }
 

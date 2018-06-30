@@ -16,7 +16,7 @@ if global.gcdLeft == 0 and cdLeft == 0 and global.casting = false
 	}
 	
 	thisTar = global.enemyFocus
-	
+	ds_grid_add(obj_damage.damageGrid,4,keyid,1)
 	return(true);	
 }
 else if maxcd < global.spellQueue

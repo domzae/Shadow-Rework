@@ -10,6 +10,7 @@ if global.gcdLeft == 0 and (cdLeft == 0 or inst_mindblast.talMindShatterChargesL
 		
 	alarm[3] = castTime*global.hastemultiplier;
 	thisTar = global.enemyFocus
+	ds_grid_add(obj_damage.damageGrid,4,keyid,1)
 }
 else if maxcd < global.spellQueue
 {

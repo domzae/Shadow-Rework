@@ -5,6 +5,7 @@ madnessStart = true;
 focus = false;
 setbinding = false;
 keybind = global.keybindArr[keyid]
+crit = false
 
 
 global.lastGCDinstant = false;

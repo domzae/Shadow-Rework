@@ -9,6 +9,7 @@ if global.casting == false and global.lastGCDinstant == false
 	}
 	with obj_enemy
 	{
+		thisDot = inst_mindsear
 		scr_damage((global.dmgMindSear/4),0)
 	}
 }

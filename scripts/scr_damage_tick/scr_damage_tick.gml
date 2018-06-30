@@ -10,22 +10,21 @@ var tickDmg = argument[0]/ticksR
 
 if alarm[4] > tickTime
 {
-	scr_damage(tickDmg)
 	alarm[8] = tickTime
 }
 else if alarm[4] <= 0
 {
 	if ticksL == 0
 	{
-		scr_damage(tickDmg)
 	}
 	else
 	{
-		scr_damage(tickDmg*ticksL)
+		tickDmg *= ticksL
 	}
 }
 else
 {
-	scr_damage(tickDmg)
 	alarm[8] = alarm[4]
 }
+
+scr_damage(tickDmg)

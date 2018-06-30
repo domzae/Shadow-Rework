@@ -10,6 +10,8 @@ if global.casting == false and global.lastGCDinstant == false
 	if global.aoeTargets <= 3
 	with obj_enemy
 	{
+		
+		thisDot = other.object_index
 		scr_damage(global.dmgHoS/4,0) //damage all if less than 4
 	}
 	else

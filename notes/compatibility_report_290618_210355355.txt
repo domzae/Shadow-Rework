@@ -1,0 +1,13 @@
+Converting GML script: ${project_dir}\scripts\scr_ds_grid_print\scr_ds_grid_print.gml
+Converted description /// @description scr_ds_grid_print(DSGridIndex, filename, columnNames)/// @param DSGridIndex
+/// @param  filename
+/// @param  columnNames
+
+Converting GML script: ${project_dir}\objects\obj_demo_ds_debug\Create_0.gml
+Converted description /// @description  Initialize
+
+Converting GML script: ${project_dir}\objects\obj_demo_ds_debug\Alarm_0.gml
+Converted description /// @description  Print data from DS
+
+Converting GML script: ${project_dir}\objects\obj_demo_ds_debug\Other_5.gml
+Converted description /// @description  Cleanup DS

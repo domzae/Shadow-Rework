@@ -26,6 +26,7 @@ if global.sanity == false
 		}
 		with obj_enemy
 		{
+			thisDot = inst_voideruption
 			scr_damage(global.dmgVEruption,0)
 		}
 	}

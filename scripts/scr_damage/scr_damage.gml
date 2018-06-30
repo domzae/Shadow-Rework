@@ -1,63 +1,79 @@
 //scr_damage(damage,targetid)
-
-damage = argument[0]
-var focTar = argument[1]
-
-//madness multiplier
-if global.madness == true
+if global.dmgON == true
 {
-	damage *= (1+ (global.dmgMadness/100))
-	//Allure multiplier
-	if global.talAllure == true
+	crit = false
+	damage = argument[0]
+	var focTar = argument[1]
+
+	//madness multiplier
+	if global.madness == true
 	{
-		damage *= (1+ (obj_allure.dmgAllure/100))
-	}
-}
-//Focused Insanity multiplier
-else if global.talFocusedInsanity == true
-{
-	damage *= (1+ (obj_talFI.dmgFocusedInsanity/100))
-}
-
-//crit multiplier
-if global.baseCrit > 0
-{
-	if irandom(100/clamp(global.baseCrit,1,100)-1) == 0
-	{
-		damage *= 2
-	}
-}
-
-
-if focTar == 0 //aoe
-{
-	with obj_enemy
-	{
-		//twist of fate - mastery
-		if currentPerc < 100
+		damage *= (1+ (global.dmgMadness/100))
+		//Allure multiplier
+		if global.talAllure == true
 		{
-			other.damage *= (1+ ( (1-(currentPerc/100))*global.maxMastery)/100)
-		}	
-		currentHP -= other.damage/global.aoeTargets
+			damage *= (1+ (obj_allure.dmgAllure/100))
+		}
 	}
-}
-else
-{
-	with focTar
+	//Focused Insanity multiplier
+	else if global.talFocusedInsanity == true
 	{
-		//twist of fate - mastery
-		if currentPerc < 100
+		damage *= (1+ (obj_talFI.dmgFocusedInsanity/100))
+	}
+
+	//crit multiplier
+	if global.baseCrit > 0
+	{
+		if irandom(100/clamp(global.baseCrit,1,100)-1) == 0
 		{
-			other.damage *= (1+ ( (1-(currentPerc/100))*global.maxMastery)/100)
-		}	
-		currentHP -= other.damage
+			damage *= 2
+			crit = true
+		}
+		else
+		{
+			crit = false
+		}
+	}
+
+
+	if focTar == 0 //aoe
+	{
+		with obj_enemy
+		{
+			//twist of fate - mastery
+			if currentPerc < 100
+			{
+				other.damage *= (1+ ( (1-(currentPerc/100))*global.maxMastery)/100)
+			}	
+			currentHP -= other.damage/global.aoeTargets
+		}
+	}
+	else
+	{
+		with focTar
+		{
+			//twist of fate - mastery
+			if currentPerc < 100
+			{
+				other.damage *= (1+ ( (1-(currentPerc/100))*global.maxMastery)/100)
+			}	
+			currentHP -= other.damage
+		}
+	}
+
+	obj_damage.totalDamage += damage
+	obj_damage.secondDamage += damage
+
+	if object_index == obj_enemy
+	{
+		scr_damage_grid(thisDot)
+	}
+	else
+	{
+		scr_damage_grid();
 	}
 }
-
-obj_damage.totalDamage += damage
-obj_damage.secondDamage += damage
-
-/*if obj_enemy.focus == true
-{
-	obj_enemy.currentHP -= damage
-}
+	/*if obj_enemy.focus == true
+	{
+		obj_enemy.currentHP -= damage
+	}

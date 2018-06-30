@@ -27,6 +27,7 @@ if scr_ability_check()
 	if focTar.VEApplied == false 
 	{
 		focTar.VEApplied = true;
+		focTar.alarm[5] = (3*room_speed)/(1+ global.haste/100) //set tick timer
 	}
 	else if focTar.alarm[4] > (dotTime*0.3)*room_speed
 	{
@@ -37,6 +38,5 @@ if scr_ability_check()
 		tempDoT = focTar.alarm[4]
 	}
 	focTar.alarm[4] = dotTime*room_speed + tempDoT;
-	focTar.alarm[5] = (3*room_speed)/(1+ global.haste/100) //set tick timer
 
 }

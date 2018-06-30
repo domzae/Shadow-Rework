@@ -146,7 +146,24 @@
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "overriddenProperties": null,
+    "overriddenProperties": [
+        {
+            "id": "5c59bb13-82ff-4c82-bb6e-3d6b5b05e157",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",
+            "propertyId": "8c18da02-3e14-4ced-9fa2-da0dc0ecfa03",
+            "value": "13"
+        },
+        {
+            "id": "aeb7fea7-547b-4b9f-bcfc-76b6b5a3f44d",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",
+            "propertyId": "8908cc97-9ef7-42b1-8c0f-960c2cd1f33d",
+            "value": "Call to the Void"
+        }
+    ],
     "parentObjectId": "7a6d22db-a2ae-4a74-bb11-98c9a85e5170",
     "persistent": false,
     "physicsAngularDamping": 0.1,

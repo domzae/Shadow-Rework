@@ -26,6 +26,7 @@ if global.casting == true
 			{
 				SWPApplied = true;
 				alarm[7] = inst_swpain.dotTime*room_speed;
+				alarm[2] = (3*room_speed)/(1+ global.haste/100)
 			}
 			else if alarm[0] > (inst_swpain.dotTime*0.3)*room_speed
 			{
@@ -38,7 +39,8 @@ if global.casting == true
 				alarm[7] = tempDoT
 			}
 			alarm[0] = inst_swpain.dotTime*room_speed + tempDoT;
-			alarm[2] = (3*room_speed)/(1+ global.haste/100)
+			
+			thisDot = other.object_index
 			scr_damage(global.dmgDarkVoid,0)
 	}
 }

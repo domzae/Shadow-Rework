@@ -13,5 +13,7 @@ if ticks < 4
 }
 else
 {
+	firstTick = true
 	instance_destroy();
 }
+firstTick = false
