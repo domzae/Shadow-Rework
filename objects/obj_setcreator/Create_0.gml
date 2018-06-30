@@ -153,6 +153,16 @@ with (setdmgVBMadness)
 	leftText = "Void Bolt damage bonus";
 	rightText = "% - Applied instead of the Madness damage bonus";
 }
+yy2 += verticalspacing;
+//Madness Haste decay
+setmadnessHasteDecay = instance_create_depth(mCol, y + yy2, 0, obj_settings);
+with (setmadnessHasteDecay)
+{
+	userinput = global.madnessHasteDecay;
+	maxCharacters = 1;
+	leftText = "Madness Haste Decay";
+	rightText = "1 = On\n2 = Off";
+}
 
 
 

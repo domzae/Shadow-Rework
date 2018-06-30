@@ -25,9 +25,12 @@ if global.surrender == true
 		global.sanity = false;
 		
 	}
-	else //haste reduction, madness reduction
+	else//haste reduction, madness reduction
 	{
-		global.haste -= ((global.madnesshaste-global.vfhaste)/global.surrenderTime)/room_speed;
+		if global.madnessHasteDecay == true
+		{
+			global.haste -= ((global.madnesshaste-global.vfhaste)/global.surrenderTime)/room_speed;
+		}
 		madnessTimeLeft -= 1;
 	}
 }
@@ -93,7 +96,10 @@ else //madness start
 	}
 	else //haste reduction, madness reduction
 	{
-		global.haste -= (global.madnesshaste/global.madnessTime)/room_speed;
+		if global.madnessHasteDecay == true
+		{
+			global.haste -= (global.madnesshaste/global.madnessTime)/room_speed;
+		}
 		madnessTimeLeft -= 1;
 	}
 }

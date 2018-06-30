@@ -17,6 +17,7 @@ global.surrenderTime = ini_read_real("Madness","Surrender Duration",20);
 global.satiatedModifier = ini_read_real("Madness","Satiated %",1.4);
 global.satiatedTime = ini_read_real("Madness","Satiated Duration",12);
 global.surrenderExitIns = ini_read_real("Madness","Surrender Exit Insanity",70);
+global.madnessHasteDecay = ini_read_real("Madness","Madness Haste Decay",true);
 
 
 //ability cds

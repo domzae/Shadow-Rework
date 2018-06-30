@@ -35,6 +35,10 @@ with (setsurrenderExitIns)
 {
 	global.surrenderExitIns = real(userinput);
 }
+with (setmadnessHasteDecay)
+{
+	global.madnessHasteDecay = real(userinput);
+}
 with (setaoeTargets)
 {
 	global.aoeTargets = min(10,real(userinput));
