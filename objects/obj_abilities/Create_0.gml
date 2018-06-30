@@ -6,7 +6,10 @@ focus = false;
 setbinding = false;
 keybind = global.keybindArr[keyid]
 crit = false
+pickup = false
 
+curx = x
+cury = y
 
 global.lastGCDinstant = false;
 

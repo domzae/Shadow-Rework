@@ -32,8 +32,8 @@ if VEApplied == true
 //mouseover
 if mouseover == true
 {
-	draw_set_font(fnt_settings)
+	draw_set_font(fnt_tooltip)
 	draw_set_valign(fa_top)
 	draw_set_halign(fa_left)
-	draw_outline_text(20, 1000,c_black,c_white,"Click to change target, <TAB> to cycle through targets");
+	draw_outline_text(20, 1020,c_black,c_white,"Click to change target, <TAB> to cycle through targets");
 }

@@ -24,3 +24,9 @@ if (setbinding == true and (k > 47 and k < 91))
 	keybind = keyboard_lastchar;
 	setbinding = false;
 }
+
+//pickup
+if pickup == true
+{
+	mp_potential_step(mouse_x,mouse_y,1000,false)
+}

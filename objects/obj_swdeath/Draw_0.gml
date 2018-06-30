@@ -57,7 +57,7 @@ if focus == true && setbinding == false
 {
 	draw_sprite(spr_abilityover,0,x,y);
 	draw_tooltip_mouse(tooltipText,0);
-	draw_outline_text(20, 1000,c_black,c_white,"Right/Middle-Click to change key binding (numbers/letters only)");
+	draw_outline_text(20, 1020,c_black,c_white,"Middle-Click to change key binding (numbers/letters only) || Hold right-click to drag and rearrange icons");
 }
 
 //gcd overlay
