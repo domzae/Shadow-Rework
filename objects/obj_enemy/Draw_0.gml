@@ -28,3 +28,12 @@ if VEApplied == true
 	draw_sprite_stretched(spr_voidentropy,0,x+sprite_width+135,y,50,50)
 	draw_outline_text(x+sprite_width+154,y+sprite_height/2,c_black,c_green,string_format(alarm[4]/room_speed,3,1));
 }
+
+//mouseover
+if mouseover == true
+{
+	draw_set_font(fnt_settings)
+	draw_set_valign(fa_top)
+	draw_set_halign(fa_left)
+	draw_outline_text(20, 1000,c_black,c_white,"Click to change target, <TAB> to cycle through targets");
+}

@@ -3,6 +3,7 @@ currentHP = maxHP
 currentPerc = (currentHP/maxHP)*100
 
 focus = false
+mouseover = false
 
 inst_enemy1.focus = true
 global.enemyFocus = inst_enemy1.id
