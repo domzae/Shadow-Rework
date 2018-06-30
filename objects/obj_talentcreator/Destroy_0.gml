@@ -144,7 +144,7 @@ with tal11
 		global.talFocusedInsanity = false
 	}
 	global.talFocusedInsanityDmg = real(talSetting.userinput);
-	global.talFocusedInsanityPeak = real(talSetting2.userinput);
+	//global.talFocusedInsanityPeak = real(talSetting2.userinput);
 }
 with tal12
 {

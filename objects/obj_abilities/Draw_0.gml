@@ -62,15 +62,6 @@ if isVoid == true and global.sanity == true
 	draw_set_alpha(1);
 }
 
-//mouseover 
-if focus == true && setbinding == false
-{
-	draw_sprite(spr_abilityover,0,x,y);
-	draw_tooltip_mouse(tooltipText,0);
-	draw_outline_text(20, 1020,c_black,c_white,"Middle-Click to change key binding (numbers/letters only) || Hold right-click to drag and rearrange icons");
-
-}
-
 //draw keybind
 draw_set_halign(fa_middle);
 draw_set_font(fnt_basic);
@@ -85,4 +76,13 @@ if setbinding == true
 	draw_rectangle(x+18,y-50,x+51,y-22,1);
 	
 	draw_tooltip_mouse("Press a button to set a keybind for " + abilityName,400)
+}
+
+//mouseover 
+if focus == true && setbinding == false
+{
+	draw_sprite(spr_abilityover,0,x,y);
+	draw_tooltip_mouse(tooltipText,0);
+	draw_outline_text(20, 1020,c_black,c_white,"Middle-Click to change key binding (numbers/letters only) || Hold right-click to drag and rearrange icons");
+
 }

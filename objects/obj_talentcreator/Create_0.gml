@@ -140,15 +140,15 @@ with tal11
 {
 	image_index = 11;
 	talentName = "Focused Insanity"
-	talentText = "[Passive]\nWhile in Voidform your damage is increased up to x% based on how close to y insanity you are."
+	talentText = "[Passive]\nWhile in Voidform your damage is increased up to x% based on how close to 75 insanity you are."
 	leftText = "Max damage increase"
 	rightText = "percent"
 	focus = global.talFocusedInsanity
 	talSet = global.talFocusedInsanityDmg;
 	row = 4
-	leftText2 = "Peak insanity"
-	rightText2 = ""
-	talSet2 = real(global.talFocusedInsanityPeak);
+	//leftText2 = "Peak insanity"
+	//rightText2 = ""
+	//talSet2 = real(global.talFocusedInsanityPeak);
 }
 
 tal12 = instance_create_depth(col3,row3,-1,obj_talent)

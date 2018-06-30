@@ -98,7 +98,7 @@ global.talAllureDur = ini_read_real("Talents","Allure Duration",20);
 global.dmgMindBlast = ini_read_real("Damage","Mind Blast Damage",8000);
 global.dmgSWDeath = ini_read_real("Damage","SW: Death Damage",13500);
 global.dmgVBolt = ini_read_real("Damage","Void Bolt Damage",6000);
-global.dmgVEruption = ini_read_real("Damage","Void Eruption Damage",12000);
+global.dmgVEruption = ini_read_real("Damage","Void Eruption Damage",10000);
 global.dmgMindFlay = ini_read_real("Damage","Mind Flay Damage",10000);
 global.dmgMindSear = ini_read_real("Damage","Mind Sear Damage",4000);
 global.dmgSWPain = ini_read_real("Damage","SW: Pain Damage",9000);
@@ -111,7 +111,7 @@ global.dmgHoS = ini_read_real("Damage","Hymn of Sorrow Damage", 20000);
 global.dmgVoidEntropy = ini_read_real("Damage","Void Entropy Damage", 10000);
 
 global.dmgMadness = ini_read_real("Damage","Madness Damage", 20);
-global.dmgVBMadness = ini_read_real("Damage","Madness VB Damage", 50);
+global.dmgVBMadness = ini_read_real("Damage","Madness VB Damage", 150);
 global.maxMastery = ini_read_real("Damage","Max Mastery", 8);
 global.baseCrit = ini_read_real("Damage","Crit Chance", 30);
 global.maxHP = ini_read_real("Damage","Max HP", 10000000);
