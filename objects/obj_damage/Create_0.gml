@@ -1,14 +1,12 @@
 start = true
 totalDamage = 0
-
-secondDamage = 0
-secondDPS = 0
-
+totalTime = 0
 totalDPS = 0
 
-totalTime = 0
+madnessDamage = 0
+madnessTime = 0
+madnessDPS = 0
 
-last5 = 5
 
 //damage grid
 // [  0  ,   1  ,  2 ,  3  ,  4  , 5 , 6 , 7 ,  8 ,  9  ]

@@ -25,7 +25,6 @@ draw_set_valign(fa_top);
 draw_outline_text(x1,y1-4,c_black,c_white,"Total:")
 
 
-
 if totalDamage < 100000
 {
  strDMG = string_thousands_scripts(totalDamage)
@@ -45,6 +44,22 @@ else
 }
 draw_set_halign(fa_right)
 draw_outline_text(x2,y1-4,c_black,c_white,strDMG + " (" + strDPS + ")")
+
+//Time
+var strSecs = string_zeroes_scripts(totalTime mod 60,2)
+var strMins = string(totalTime div 60)
+if alarm[0] > -1
+{
+	draw_outline_text(x2,y1-44,c_black,c_lime,strMins + ":" +strSecs)
+	draw_set_halign(fa_left)
+	draw_outline_text(x1,y1-44,c_black,c_white,"          Activity Time:")
+}
+else
+{
+	draw_outline_text(x2,y1-44,c_black,c_orange,strMins + ":" +strSecs)
+	draw_set_halign(fa_left)
+	draw_outline_text(x1,y1-44,c_black,c_white,"          Paused")
+}
 
 // [  0  ,   1  ,  2 ,  3  ,  4  , 5 , 6 , 7 ,  8 ,  9  ]
 // [keyid,damage,hits,crits,casts,avg,min,max,name,sname]
@@ -103,6 +118,12 @@ for (var i=0; i<14; i++)
 		var dpe = string_thousands_scripts(shortDmg/real(casts))
 		draw_tooltip_mouse(name+"\nCasts: "+casts+"\nHits: "+hits+"\nCrits: "+crits+"("+critper+"%)\nAvg: "+avg+"\nMin: "+mi+"\nMax: "+ma+"\nDPE: "+dpe,0)
 	}
+}
+
+if point_in_rectangle(mouse_x,mouse_y,x1-5,y1-4,x2+5,y)
+{
+	draw_rectangle(x1-4,y1-4,x2+4,y,1)
+	draw_tooltip_mouse("Madness Time: " + string(madnessTime) + "\nMadness Damage: " + string_thousands_scripts(madnessDamage) + "\nMadness DPS: " + string_thousands_scripts(madnessDPS),0)
 }
 
 //reset grid order for updates

@@ -1,6 +1,12 @@
 //scr_damage(damage,targetid)
-if global.dmgON == true
+if global.dmgON == true //&& obj_damage.alarm[0] != -1
 {
+	//start recording dps if not already
+	if obj_damage.alarm[0] = -1
+	{
+		obj_damage.alarm[0] = room_speed
+	}
+	
 	crit = false
 	damage = argument[0]
 	var focTar = argument[1]
@@ -72,7 +78,10 @@ if global.dmgON == true
 	}
 
 	obj_damage.totalDamage += damage
-	obj_damage.secondDamage += damage
+	if global.madness == true
+	{
+		obj_damage.madnessDamage += damage
+	}
 
 	if object_index == obj_enemy
 	{

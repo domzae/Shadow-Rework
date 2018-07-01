@@ -1,6 +1,9 @@
 var maxcd = max(global.gcdLeft,cdLeft)
-if global.gcdLeft == 0 and cdLeft == 0 and global.casting = false
+
+if global.gcdLeft == 0 and (cdLeft == 0 or object_index == obj_mindblast) and global.casting = false
 {	
+	
+	
 	//set gcd
 	obj_gcd.alarm[0] = global.gcd;
 	

@@ -1,16 +1,19 @@
 var maxcd = max(global.gcdLeft,cdLeft)
-if global.gcdLeft == 0 and (cdLeft == 0 or inst_mindblast.talMindShatterChargesLeft > 0) and global.casting = false
+if cdLeft == 0 or inst_mindblast.talMindShatterChargesLeft > 0
 {	
-	//set gcd
-	obj_gcd.alarm[0] = global.gcd;
-	global.lastGCDinstant = false;
+	if scr_ability_check()
+	{
+		//set gcd
+		//obj_gcd.alarm[0] = global.gcd;
+		global.lastGCDinstant = false;
 		
-	global.casting = true;
-	global.castingTime = 0;
+		global.casting = true;
+		global.castingTime = 0;
 		
-	alarm[3] = castTime*global.hastemultiplier;
-	thisTar = global.enemyFocus
-	ds_grid_add(obj_damage.damageGrid,4,keyid,1)
+		alarm[3] = castTime*global.hastemultiplier;
+		thisTar = global.enemyFocus
+		ds_grid_add(obj_damage.damageGrid,4,keyid,1)
+	}
 }
 else if maxcd < global.spellQueue
 {

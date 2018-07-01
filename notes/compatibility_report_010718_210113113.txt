@@ -1,0 +1,3 @@
+Resource name collision 'string_zeroes' already exists, renamed to 'string_zeroes_scripts'
+Converting GML script: ${project_dir}\scripts\string_zeroes_scripts\string_zeroes_scripts.gml
+Converted description /// @description Returns argument0 as a string with zeroes if it has fewer than argument1 characters

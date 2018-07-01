@@ -9,6 +9,10 @@ if global.dmgON == false
 	{
 		visible = true
 	}
+	with obj_damagePause
+	{
+		visible = true
+	}
 	with obj_enemy
 	{
 		visible = true
@@ -19,6 +23,10 @@ else
 	global.dmgON = false;
 	image_index = 0;
 	with obj_damage
+	{
+		visible = false
+	}
+	with obj_damagePause
 	{
 		visible = false
 	}
