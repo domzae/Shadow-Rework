@@ -7,6 +7,11 @@ draw_set_valign(fa_center);
 
 
 draw_set_colour(c_yellow);
+//border on spell queue
+if alarm[10] > 0
+{
+	draw_border(c_yellow,-sprite_width/2,-sprite_height/2)
+}
 draw_set_alpha(($FF000000 >> 24) / $ff);
 
 //draw dot time

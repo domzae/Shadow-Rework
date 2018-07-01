@@ -10,6 +10,12 @@ draw_border(c_gray,-sprite_width/2,-sprite_height/2)
 draw_set_alpha(1)
 
 draw_set_colour(c_yellow);
+//border on spell queue
+if alarm[10] > 0
+{
+	draw_border(c_yellow,-sprite_width/2,-sprite_height/2)
+}
+
 draw_set_alpha(($FF000000 >> 24) / $ff);
 
 
@@ -83,6 +89,6 @@ if focus == true && setbinding == false
 {
 	draw_sprite(spr_abilityover,0,x,y);
 	draw_tooltip_mouse(tooltipText,0);
-	draw_outline_text(20, 1020,c_black,c_white,"Middle-Click to change key binding (numbers/letters only) || Hold right-click to drag and rearrange icons");
+	draw_outline_text(20, 1020,c_black,c_white,"Middle-Click or <Alt> to change key binding (numbers/letters only) || Hold Right-Click to drag and rearrange icons");
 
 }
