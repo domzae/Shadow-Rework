@@ -1,6 +1,6 @@
 1.0.0←ed6a955d-5826-4f98-a450-10b414266c27←ed6a955d-5826-4f98-a450-10b414266c27|{
     "option_gameguid": "a2f4282e-fa4a-4a47-9cea-f00bcafe3c2e",
-    "option_lastchanged": "13 June 2018 2:45:38",
+    "option_lastchanged": "01 July 2018 23:39:06",
     "option_game_speed": 60,
     "option_sci_usesci": true,
     "option_author": "Domzae"

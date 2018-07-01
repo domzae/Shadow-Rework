@@ -19,7 +19,7 @@ if maxWidth == 0  //default to string width
 var boxheight = string_height_ext(text,-1,maxWidth)+10;
 var boxwidth = string_width_ext(text,-1,maxWidth)+10;
 
-var alpha = 0.8;
+var alpha = 0.88;
 
 
 

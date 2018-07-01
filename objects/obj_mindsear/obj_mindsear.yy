@@ -5,16 +5,6 @@
     "name": "obj_mindsear",
     "eventList": [
         {
-            "id": "a0437035-1ed5-4587-a8d3-9d080a809239",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 1,
-            "eventtype": 9,
-            "m_owner": "13d54e73-213c-42f0-8928-80a90526e75d"
-        },
-        {
             "id": "675b5ffc-d0a1-4d0c-addc-3941f450a1e3",
             "modelName": "GMEvent",
             "mvc": "1.0",

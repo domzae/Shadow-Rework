@@ -25,7 +25,7 @@ else //start increase cycle while sane
 		alarm[0] = -1
 	}
 }
-tooltipText = "Allure to the Void\nYour Madness gains " + string(global.talAllureDmg) + "% damage";
+tooltipText = "Allure of the Void\nYour Madness gains " + string(global.talAllureDmg) + "% damage";
 
 /*if allure == false
 {
@@ -47,4 +47,4 @@ else
 {
 	dmgAllure = global.talAllureDmg*(alarm[0]/(global.talAllureDur*room_speed))
 }
-	tooltipText = "Allure to the Void\nYour next Madness gains " + string(global.talAllureDmg) + "% damage";*/
+	tooltipText = "Allure of the Void\nYour next Madness gains " + string(global.talAllureDmg) + "% damage";*/

@@ -6,7 +6,7 @@ if global.madness == false
 
 		global.lastGCDinstant = true;
 	
-		image_index ++;
+		image_index = 1;
 		alarm[0] = cd;
 
 		global.surrender = true;

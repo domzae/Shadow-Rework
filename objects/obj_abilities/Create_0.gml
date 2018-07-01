@@ -7,6 +7,7 @@ setbinding = false;
 keybind = global.keybindArr[keyid]
 crit = false
 pickup = false
+bypass = false
 
 curx = x
 cury = y

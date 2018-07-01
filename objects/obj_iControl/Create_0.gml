@@ -1,5 +1,5 @@
 x = room_width/2
-
+io_clear();
 //set global variables initially, which can be altered in settings room
 if !variable_global_exists("drain")
 {

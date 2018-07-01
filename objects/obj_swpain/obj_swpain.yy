@@ -5,16 +5,6 @@
     "name": "obj_swpain",
     "eventList": [
         {
-            "id": "163856a9-204e-4060-9261-98bdfb63d57c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 1,
-            "eventtype": 9,
-            "m_owner": "46cbbcc4-b106-4686-a82d-e7b42a40716e"
-        },
-        {
             "id": "781a8d23-4809-4105-8a72-cc615f8c34e9",
             "modelName": "GMEvent",
             "mvc": "1.0",

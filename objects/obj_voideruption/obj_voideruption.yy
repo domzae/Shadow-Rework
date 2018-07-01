@@ -5,16 +5,6 @@
     "name": "obj_voideruption",
     "eventList": [
         {
-            "id": "691e2047-3d4f-4701-aa3a-d1e19942bd60",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 1,
-            "eventtype": 9,
-            "m_owner": "bbca39bf-2df5-4d1c-b4b6-f6365dd03ab6"
-        },
-        {
             "id": "83e76f40-4b3c-430a-a3a1-8a083d42efea",
             "modelName": "GMEvent",
             "mvc": "1.0",

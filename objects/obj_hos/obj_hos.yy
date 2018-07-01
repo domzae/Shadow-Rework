@@ -5,16 +5,6 @@
     "name": "obj_hos",
     "eventList": [
         {
-            "id": "25a0ae48-6e77-45e9-a693-23203c9cda39",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 1,
-            "eventtype": 9,
-            "m_owner": "944e902e-2b67-4e81-b093-4784c8a04c2f"
-        },
-        {
             "id": "f791c1ba-ffe3-45ae-a477-a0e5c4a5f02a",
             "modelName": "GMEvent",
             "mvc": "1.0",

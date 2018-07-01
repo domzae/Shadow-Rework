@@ -1,9 +1,7 @@
 var maxcd = max(global.gcdLeft,cdLeft)
 
-if global.gcdLeft == 0 and (cdLeft == 0 or object_index == obj_mindblast) and global.casting = false
+if global.gcdLeft == 0 and (cdLeft == 0 or object_index == obj_mindblast) and global.casting == false
 {	
-	
-	
 	//set gcd
 	obj_gcd.alarm[0] = global.gcd;
 	
@@ -26,8 +24,10 @@ else if maxcd < global.spellQueue
 {
 	with obj_abilities
 	{
+		//alarm[9] = -1
 		alarm[10] = -1
 	}
+	//alarm[9] = 1
 	alarm[10] = maxcd*room_speed
 	
 	return(false);

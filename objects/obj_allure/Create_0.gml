@@ -5,4 +5,4 @@ focus = false;
 
 dmgAllure = global.talAllureDmg
 
-tooltipText = "Allure to the Void\nYour next Madness gains " + string(global.talAllureDmg) + "% damage";
+tooltipText = "Allure of the Void\nYour next Madness gains " + string(global.talAllureDmg) + "% damage";

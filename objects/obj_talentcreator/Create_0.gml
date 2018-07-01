@@ -155,7 +155,7 @@ tal12 = instance_create_depth(col3,row3,-1,obj_talent)
 with tal12
 {
 	image_index = 12;
-	talentName = "Allure to the Void"
+	talentName = "Allure of the Void"
 	talentText = "[Passive]\nYour Madness has x% increased damage, reduced for each second spent in Voidform. This bonus is replenished while sane."
 	leftText = "Max damage increase"
 	rightText = "percent"

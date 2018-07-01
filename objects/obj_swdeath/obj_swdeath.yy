@@ -5,16 +5,6 @@
     "name": "obj_swdeath",
     "eventList": [
         {
-            "id": "86747007-c068-4906-a245-8d1cbd767907",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 1,
-            "eventtype": 9,
-            "m_owner": "f475a956-2d42-4dbc-a3cd-224712400ecd"
-        },
-        {
             "id": "584a9363-13a4-484a-a36c-06295fc3bfb4",
             "modelName": "GMEvent",
             "mvc": "1.0",

@@ -5,16 +5,6 @@
     "name": "obj_darkvoid",
     "eventList": [
         {
-            "id": "53ad8917-2059-483a-bb65-98f74b94e6d0",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 1,
-            "eventtype": 9,
-            "m_owner": "415c1442-db07-4594-bb57-6a91dfd9d5d9"
-        },
-        {
             "id": "997255a3-d469-4758-8ccc-fad74d82b60c",
             "modelName": "GMEvent",
             "mvc": "1.0",
