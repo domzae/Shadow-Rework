@@ -20,14 +20,16 @@ if global.gcdLeft == 0 and (cdLeft == 0 or object_index == obj_mindblast) and gl
 	ds_grid_add(obj_damage.damageGrid,4,keyid,1)
 	return(true);	
 }
-else if maxcd < global.spellQueue
+else if maxcd < global.spellQueue //ability can't be pressed until 1 step after queue ends
 {
 	with obj_abilities
 	{
-		//alarm[9] = -1
+		alarm[9] = -1
+		bypass = false 
 		alarm[10] = -1
 	}
-	//alarm[9] = 1
+	//alarm[9] = maxcd*room_speed + 1
+	bypass = true
 	alarm[10] = maxcd*room_speed
 	
 	return(false);

@@ -30,3 +30,13 @@ if pickup == true
 {
 	mp_potential_step(mouse_x,mouse_y,1000,false)
 }
+
+if keyboard_check_pressed(vk_anykey)
+{
+	if keyboard_lastchar == keybind and bypass == false
+	{
+		event_perform(ev_mouse,ev_left_press)
+		image_xscale = 0.97;
+		image_yscale = 0.97;
+	}
+}
