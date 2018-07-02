@@ -8,6 +8,7 @@ if global.gcdLeft == 0 and (cdLeft == 0 or object_index == obj_mindblast) and gl
 	//stop current channels
 	global.channeling = false;
 	global.channelingTime = 0;
+	global.castingTime = 0
 	
 	if instance_exists(inst_HoS)
 	{
@@ -28,13 +29,21 @@ else if maxcd < global.spellQueue //ability can't be pressed until 1 step after 
 		bypass = false 
 		alarm[10] = -1
 	}
-	//alarm[9] = maxcd*room_speed + 1
-	bypass = true
-	alarm[10] = maxcd*room_speed
 	
+	if maxcd == 0
+	{
+		bypass = true
+		alarm[10] = 1
+	}
+	else
+	{
+		//alarm[9] = maxcd*room_speed + 1
+		bypass = true
+		alarm[10] = maxcd*room_speed
+	}
 	return(false);
 }
-else
+else 
 {
 	return(false);
 }

@@ -12,7 +12,8 @@
         "1f10b54f-3b07-45d5-ad13-e13d316ccf04",
         "96d7420f-81e9-48b7-92fa-9a54ad612ac9",
         "90f64a95-4bcf-40f8-894a-499f7fe6c71c",
-        "9cbbad43-c18c-4609-88aa-ec5f83dbc411"
+        "9cbbad43-c18c-4609-88aa-ec5f83dbc411",
+        "738d0a59-b1b6-4d85-9175-0cf8758aec39"
     ],
     "filterType": "GMSprite",
     "folderName": "Settings\/Talents",

@@ -15,6 +15,7 @@ if cdhasted > 0 //update cooldown for cooldowns that are defined by haste
 }
 
 
+
 //set binding
 var k=keyboard_lastkey;
 var c=keyboard_lastchar;
